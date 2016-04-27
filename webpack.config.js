@@ -22,6 +22,11 @@ module.exports = {
       }
     ]
   },
+  jadeLoader: {
+    locals: {
+      helloworld: 'Hello world'
+    }
+  },
   postcss: (webpack) => [
     require('postcss-import')({ addDependencyTo: webpack }),
     require('postcss-url')(),

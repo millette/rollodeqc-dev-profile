@@ -94,7 +94,7 @@ comme point de départ. Tel un éléphant, prenons ça une bouchée à la fois.
 [sources]: https://github.com/millette/boy-lost-webpack
 
 ## Lost Grid et vieux fureteurs
-J'ai fais plusieurs projets avec Twitter Bootstrap, mais ici je voulais
+J'ai fait plusieurs projets avec Twitter Bootstrap, mais ici je voulais
 m'en tenir strictement au *grid*. J'avais déjà utilisé [Lost][] et comme
 l'expérience m'avait bien plu, j'ai voulu recommencer.
 

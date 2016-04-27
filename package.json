@@ -2,7 +2,7 @@
   "name": "boy-lost-webpack",
   "description": "Exploring webpack and lost.",
   "license": "MIT",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "repository": "millette/boy-lost-webpack",
   "author": {
     "name": "Robin Millette",
@@ -27,7 +27,7 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "jade": "^1.11.0",
-    "jade-html-loader": "0.0.3",
+    "jade-html-loader": "github:thekip/jade-html-loader",
     "lost": "^6.7.2",
     "postcss": "^5.0.19",
     "postcss-browser-reporter": "^0.4.0",
