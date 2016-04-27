@@ -4,9 +4,6 @@ block title
   title helloworld
 
 block content
-  h1= devs[0].name + ' '
-    small: a(href='https://github.com/' + devs[0].username) (github/#{devs[0].username})
-
   section
     div#text
       blockquote= devs[0].bio
@@ -34,6 +31,8 @@ block content
 
     div#photo
       img(src=devs[0].photo)
+      h1= devs[0].name + ' '
+        small: a(href='https://github.com/' + devs[0].username) (github/#{devs[0].username})
 
   section
     div#timelines

@@ -1,6 +1,7 @@
 @import 'reset/reeeset.min.css';
 
 body {
+  background: url(../lgren076.jpg);
   font-size: responsive;
   margin: 1rem;
 }
@@ -15,16 +16,22 @@ footer {
   text-align: center;
 }
 
+section {
+  margin-bottom: 1rem;
+  lost-utility: clearfix;
+
+  & div {
+    padding: 0.5rem;
+    background: white;
+  }
+}
+
 ul {
   margin-left: 0.25rem;
 }
 
 li {
   list-style: none;
-}
-
-section {
-  lost-utility: clearfix;
 }
 
 div#text {
