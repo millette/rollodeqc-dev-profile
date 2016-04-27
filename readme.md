@@ -1,4 +1,4 @@
-# Explorons webpack et lost (grid) [![Dependency Status](https://gemnasium.com/badges/github.com/millette/boy-lost-webpack.svg)](https://gemnasium.com/github.com/millette/boy-lost-webpack)
+# Explorons webpack et lost (grid) [![Dependency Status](https://gemnasium.com/badges/github.com/millette/rollodeqc-dev-profile.svg)](https://gemnasium.com/github.com/millette/rollodeqc-dev-profile)
 
 ```sh
 $ npm install

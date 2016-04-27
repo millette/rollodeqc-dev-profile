@@ -1,9 +1,9 @@
 {
-  "name": "boy-lost-webpack",
+  "name": "rollodeqc-dev-profile",
   "description": "Exploring webpack and lost.",
   "license": "MIT",
-  "version": "4.1.0",
-  "repository": "millette/boy-lost-webpack",
+  "version": "5.0.0",
+  "repository": "millette/rollodeqc-dev-profile",
   "author": {
     "name": "Robin Millette",
     "email": "robin@millette.info",
