@@ -23,32 +23,26 @@ block content
           li Disponible, contactez le!
         li Sur GitHub depuis #{devs[0].githubSince}
 
-      if devs[0].orgs.length
-        h2 Organisations
-        ul
-          each org in devs[0].orgs
-            li= org
+        if devs[0].orgs.length
+          li Organisations: #{devs[0].orgs.join(', ')}
 
-      if devs[0].bigProjects.length
-        h2 Big projects
-        ul
-          each bp in devs[0].bigProjects
-            li= bp
+        if devs[0].bigProjects.length
+          li Big projects: #{devs[0].bigProjects.join(', ')}
 
-      if devs[0].popProjects.length
-        h2 Popular projects
-        ul
-          each pp in devs[0].popProjects
-            li= pp
+        if devs[0].popProjects.length
+          li Popular projects: #{devs[0].popProjects.join(', ')}
 
-    div#charts
+    div#photo
       img(src=devs[0].photo)
 
+  section
+    div#timelines
       h2 Timelines
       ul
         each tl in devs[0].timelines
           li= tl
 
+    div#barcharts
       h2 Barcharts
       ul
         each bc in devs[0].barcharts
