@@ -34,14 +34,14 @@ block content
       h1= devs[0].name + ' '
         small: a(href='https://github.com/' + devs[0].username) (github/#{devs[0].username})
 
-  section
-    div#timelines
+  section#charts
+    div
       h2 Timelines
       ul
         each tl in devs[0].timelines
           li= tl
 
-    div#barcharts
+    div
       h2 Barcharts
       ul
         each bc in devs[0].barcharts
