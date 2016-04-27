@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Robin Millette",
+    "username": "millette",
+    "photo": "https://avatars3.githubusercontent.com/u/50741?v=3&s=460",
+    "bio": "Plus de vingt-cinq années de programmation professionnelle, de l'assembleur à Zope en passant par mySQL.",
+    "blog": "http://robin.millette.info/",
+    "email": "robin@millette.info",
+    "ville": "Montréal, Québec",
+    "disponible": true,
+    "githubSince": "2009-01-31",
+    "timelines": [
+      "Activité",
+      "Nombre de stars",
+      "Nombre de projets",
+      "Nombre de followers",
+      "Nombre de followings"
+    ],
+    "barcharts": [
+      "Langages (lignes de code)",
+      "Licences (nombre de projets)",
+      "Packagers (npm, bower, etc. selon libraries.io)"
+    ],
+    "bigProjects": [
+      "rollodeqc-backend",
+      "rollodeqc-frontend"
+    ],
+    "popProjects": [
+      "star-where"
+    ],
+    "orgs": [
+      "rollodeqc",
+      "rockstars"
+    ]
+  }
+]
+

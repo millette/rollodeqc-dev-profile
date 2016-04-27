@@ -1,5 +1,28 @@
 'use strict'
 
+const months = [
+  'janvier',
+  'février',
+  'mars',
+  'avril',
+  'mai',
+  'juin',
+  'juillet',
+  'août',
+  'septembre',
+  'octobre',
+  'novembre',
+  'décembre'
+]
+
+const preprocess = (dev) => {
+  const since = new Date(dev.githubSince)
+  dev.githubSince = months[since.getMonth()] + ' ' + since.getFullYear()
+  return dev
+}
+
+const devs = require('./devs.json').map(preprocess)
+
 module.exports = {
   entry: [
     './entry.js',
@@ -24,7 +47,7 @@ module.exports = {
   },
   jadeLoader: {
     locals: {
-      helloworld: 'Hello world'
+      devs: devs
     }
   },
   postcss: (webpack) => [
