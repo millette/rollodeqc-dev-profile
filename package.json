@@ -15,7 +15,7 @@
   "scripts": {
     "start": "standard && webpack-dev-server",
     "lint": "standard",
-    "make": "standard && webpack && mkdir -p dist/js/polyfill/ ; cp crossdomain.xml logo.png favicon.ico index.html bundle.js dist/ && cp js/polyfill/* dist/js/polyfill/"
+    "make": "standard && webpack && mkdir -p dist/js/polyfill/ ; cp crossdomain.xml favicon.ico index.html bundle.js dist/ && cp js/polyfill/* dist/js/polyfill/"
   },
   "standard": {
     "ignore": [
