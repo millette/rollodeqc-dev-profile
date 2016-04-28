@@ -73,6 +73,10 @@ section#charts {
     padding: 0;
     lost-column: 1/2;
 
+    & div {
+      lost-column: 1;
+    }
+
     & h2 {
       padding: 0.25rem 0.5rem;
       background: green;
@@ -104,4 +108,22 @@ blockquote {
   &:after {
     content: "\00a0»"
   }
+}
+
+/* d3 */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }

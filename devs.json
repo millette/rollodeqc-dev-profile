@@ -9,12 +9,26 @@
     "ville": "Montréal, Québec",
     "disponible": true,
     "githubSince": "2009-01-31",
-    "timelines": [
+    "timelines2": [
       "Activité",
       "Nombre de stars",
       "Nombre de projets",
       "Nombre de followers",
       "Nombre de followings"
+    ],
+    "timelines": [
+      {
+        "reference": "http://bl.ocks.org/mbostock/3884955",
+        "name": "network",
+        "title": "Réseau social",
+        "description": "Réseau social (following/followers)",
+        "data": [
+          [ 63.4, 62.7 ],
+          [ 58.0, 59.9 ],
+          [ 53.3, 59.1 ],
+          [ 55.7, 58.8 ]
+        ]
+      }
     ],
     "barcharts": [
       {
