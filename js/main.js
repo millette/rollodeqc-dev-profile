@@ -1,20 +1,10 @@
 /* globals data1, d3, $ */
 'use strict'
 
-/*
-d3.csv('../data.csv', function(error, data) {
-  if (error) throw error
-  console.log('DATACSV:', data)
-})
-*/
-
 const grapher = (data, sel) => {
-  // console.log('hello john!')
   const margin = { top: 20, right: 80, bottom: 30, left: 50 }
   const width = 460 - margin.left - margin.right
   const height = 250 - margin.top - margin.bottom
-
-  // const parseDate = d3.time.format('%Y%m%d').parse
 
   const x = d3.scale.linear()
       .range([0, width])
@@ -34,8 +24,8 @@ const grapher = (data, sel) => {
 
   const line = d3.svg.line()
       .interpolate('basis')
-      .x(function (d) { return x(d.date) })
-      .y(function (d) { return y(d.temperature) })
+      .x((d) => x(d.date))
+      .y((d) => y(d.temperature))
 
   const svg = d3.select(sel).append('svg')
       .attr('width', width + margin.left + margin.right)
@@ -43,29 +33,22 @@ const grapher = (data, sel) => {
     .append('g')
       .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
-  color.domain(d3.keys(data[0]).filter(function (key) { return key !== 'date' }))
+  color.domain(d3.keys(data[0]).filter((key) => key !== 'date'))
 
-/*
-  data.forEach(function (d) {
-    d.date = d.date.slice(-1)
-    // d.date = parseDate(d.date)
-  })
-*/
-
-  const cities = color.domain().map(function (name) {
+  const cities = color.domain().map((name) => {
     return {
       name: name,
-      values: data.map(function (d) {
+      values: data.map((d) => {
         return {date: d.date, temperature: +d[name]}
       })
     }
   })
 
-  x.domain(d3.extent(data, function (d) { return d.date }))
+  x.domain(d3.extent(data, (d) => d.date))
 
   y.domain([
-    d3.min(cities, function (c) { return d3.min(c.values, function (v) { return v.temperature }) }),
-    d3.max(cities, function (c) { return d3.max(c.values, function (v) { return v.temperature }) })
+    d3.min(cities, (c) => d3.min(c.values, (v) => v.temperature)),
+    d3.max(cities, (c) => d3.max(c.values, (v) => v.temperature))
   ])
 
   svg.append('g')
@@ -90,15 +73,19 @@ const grapher = (data, sel) => {
 
   city.append('path')
       .attr('class', 'line')
-      .attr('d', function (d) { return line(d.values) })
-      .style('stroke', function (d) { return color(d.name) })
+      .attr('d', (d) => line(d.values))
+      .style('stroke', (d) => color(d.name))
 
   city.append('text')
-      .datum(function (d) { return {name: d.name, value: d.values[d.values.length - 1]} })
-      .attr('transform', function (d) { return 'translate(' + x(d.value.date) + ',' + y(d.value.temperature) + ')' })
+      .datum((d) => {
+        return {name: d.name, value: d.values[d.values.length - 1]}
+      })
+      .attr('transform',
+        (d) => 'translate(' + x(d.value.date) + ',' + y(d.value.temperature) + ')'
+      )
       .attr('x', 3)
       .attr('dy', '.35em')
-      .text(function (d) { return d.name })
+      .text((d) => d.name)
 }
 
 $(() => {
