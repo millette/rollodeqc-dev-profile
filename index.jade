@@ -47,7 +47,7 @@ block content
         h3= bc.title
         // p= bc.description
         if bc.data && bc.data.length
-          ul.bar
+          ul.bar(class=bc.name)
             each bar in bc.data
               li
                 span= bar.label
