@@ -18,15 +18,18 @@
     ],
     "timelines": [
       {
-        "reference": "http://bl.ocks.org/mbostock/3884955",
         "name": "network",
         "title": "Réseau social",
         "description": "Réseau social (following/followers)",
         "data": [
-          [ 59.4, 62.7 ],
-          [ 55.0, 59.9 ],
-          [ 53.3, 59.1 ],
-          [ 55.7, 58.8 ]
+          [ 98, 106.2 ],
+          [ 97, 105.9 ],
+          [ 97, 105.9 ],
+          [ 98, 105.8 ],
+          [ 97, 104.2 ],
+          [ 96, 102.9 ],
+          [ 96, 100.9 ],
+          [ 94, 101.8 ]
         ]
       }
     ],
