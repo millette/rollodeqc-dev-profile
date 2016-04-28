@@ -79,10 +79,6 @@ section#charts {
       padding: 0.5rem 0;
     }
 
-    & div#stars {
-      border-top: thick groove brown;
-    }
-
     & h2 {
       padding: 0.25rem 0.5rem;
       background: green;
