@@ -1,5 +1,7 @@
 @import 'reset/reeeset.min.css';
 
+@custom-media --only-huge-screen (width >= 90rem);
+
 body {
   background: url(../lgren076.jpg);
   font-size: responsive;
@@ -77,6 +79,12 @@ section#charts {
       lost-column: 1;
       margin: 0.5rem 0;
       padding: 0.5rem 0;
+    }
+
+    @media (--only-huge-screen) {
+      & div {
+        lost-column: 1/2;
+      }
     }
 
     & h2 {
