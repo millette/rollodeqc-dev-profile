@@ -45,6 +45,7 @@ const timelineProcess = (x, i) => {
 }
 
 const tl0 = devs[0].timelines[0].data.map(timelineProcess)
+const tl1 = devs[0].timelines[0].data.reverse().map(timelineProcess)
 
 module.exports = {
   entry: [
@@ -75,7 +76,8 @@ module.exports = {
   jadeLoader: {
     locals: {
       devs: devs,
-      tl0: tl0
+      tl0: tl0,
+      tl1: tl1
     }
   },
   postcss: (webpack) => [

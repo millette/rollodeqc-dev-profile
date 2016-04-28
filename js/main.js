@@ -1,4 +1,4 @@
-/* globals data1, d3, $ */
+/* globals data1, data2, d3, $ */
 'use strict'
 
 const grapher = (data, sel) => {
@@ -28,8 +28,12 @@ const grapher = (data, sel) => {
       .y((d) => y(d.temperature))
 
   const svg = d3.select(sel).append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
+      // .attr('width', width + margin.left + margin.right)
+      // .attr('height', height + margin.top + margin.bottom)
+      .attr('width', '100%')
+      .attr('height', '100%')
+      .attr('viewBox', '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom))
+      .attr('preserveAspectRatio', 'xMidYMid meet')
     .append('g')
       .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
@@ -90,5 +94,5 @@ const grapher = (data, sel) => {
 
 $(() => {
   grapher(data1, '#network')
-  grapher(data1, '#stars')
+  grapher(data2, '#stars')
 })

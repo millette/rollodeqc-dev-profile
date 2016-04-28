@@ -39,9 +39,10 @@ block content
       // h2 Timelines
       #network
       #stars
-      div: ul
-        each tl in devs[0].timelines2
-          li= tl
+      //-
+        div: ul
+          each tl in devs[0].timelines2
+            li= tl
 
     div
       // h2 Barcharts
@@ -60,3 +61,4 @@ block content
 
   script(type='text/javascript').
     var data1 = !{JSON.stringify(tl0)}
+    var data2 = !{JSON.stringify(tl1)}
