@@ -15,9 +15,22 @@ const months = [
   'décembre'
 ]
 
+const barchartProcess = (bc) => {
+  if (bc.data && bc.data.length) {
+    bc.max = Math.max.apply(null, bc.data.map((x) => x.value))
+  }
+  bc.data.sort((a, b) => {
+    if (a.value > b.value) { return 1 }
+    if (a.value < b.value) { return -1 }
+    return 0
+  }).reverse()
+  return bc
+}
+
 const preprocess = (dev) => {
   const since = new Date(dev.githubSince)
   dev.githubSince = months[since.getMonth()] + ' ' + since.getFullYear()
+  dev.barcharts = dev.barcharts.map(barchartProcess)
   return dev
 }
 

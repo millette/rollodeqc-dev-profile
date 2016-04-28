@@ -17,9 +17,59 @@
       "Nombre de followings"
     ],
     "barcharts": [
-      "Langages (lignes de code)",
-      "Licences (nombre de projets)",
-      "Packagers (npm, bower, etc. selon libraries.io)"
+      {
+        "name": "languages",
+        "title": "Langages",
+        "description": "Langages (lignes de code)",
+        "data": [
+          {
+            "label": "JavaScript",
+            "value": 2500
+          },
+          {
+            "label": "HTML",
+            "value": 200
+          },
+          {
+            "label": "CSS",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "licenses",
+        "title": "Licences",
+        "description": "Licences (nombre de projets)",
+        "data": [
+          {
+            "label": "MIT",
+            "value": 5
+          },
+          {
+            "label": "AGPLv3",
+            "value": 10
+          },
+          {
+            "label": "GPLv3",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "packagers",
+        "title": "Packagers",
+        "description": "Packagers (npm, bower, etc. selon libraries.io)",
+        "data": [
+          {
+            "label": "npm",
+            "value": 8
+          },
+          {
+            "label": "bower",
+            "value": 1
+          }
+        ]
+      }
     ],
     "bigProjects": [
       "rollodeqc-backend",

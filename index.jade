@@ -36,16 +36,22 @@ block content
 
   section#charts
     div
-      h2 Timelines
+      // h2 Timelines
       ul
         each tl in devs[0].timelines
           li= tl
 
     div
-      h2 Barcharts
-      ul
-        each bc in devs[0].barcharts
-          li= bc
+      // h2 Barcharts
+      each bc in devs[0].barcharts
+        h3= bc.title
+        // p= bc.description
+        if bc.data && bc.data.length
+          ul.bar
+            each bar in bc.data
+              li
+                span= bar.label
+                small(style={width: 0.8 * (bar.value / (bc.max / 100)) + '%'})= bar.value
 
   footer
     p Until à la prochaine :-)

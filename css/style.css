@@ -26,12 +26,26 @@ section {
   }
 }
 
-ul {
-  margin-left: 0.25rem;
-}
-
 li {
   list-style: none;
+}
+
+ul.bar {
+  & li {
+    & small {
+      text-align: right;
+      display: inline-block;
+      margin-left: 2%;
+      padding: 0 0.25rem;
+      background: lightblue;
+    }
+
+    & span {
+      text-align: right;
+      display: inline-block;
+      width: 18%;
+    }
+  }
 }
 
 div#text {
@@ -53,10 +67,18 @@ section#charts {
       background: green;
       color: white;
     }
-  }
 
-  & ul {
-    padding: 1rem;
+    & h3 {
+      margin: 0.5rem 0.5rem 0.25rem;
+    }
+
+    & p {
+      margin-top: 1rem;
+    }
+
+    & ul {
+      margin: 0.25rem 0.5rem;
+    }
   }
 }
 
