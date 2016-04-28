@@ -39,22 +39,19 @@ block content
       // h2 Timelines
       #network
       #stars
-      //-
-        div: ul
-          each tl in devs[0].timelines2
-            li= tl
 
     div
       // h2 Barcharts
       each bc in devs[0].barcharts
-        h3= bc.title
-        // p= bc.description
-        if bc.data && bc.data.length
-          ul.bar(class=bc.name)
-            each bar in bc.data
-              li
-                span= bar.label
-                small(style={width: 0.8 * (bar.value / (bc.max / 100)) + '%'})= bar.value
+        div.bc
+          h3= bc.title
+          // p= bc.description
+          if bc.data && bc.data.length
+            ul.bar(class=bc.name)
+              each bar in bc.data
+                li
+                  span= bar.label
+                  small(style={width: 0.8 * (bar.value / (bc.max / 100)) + '%'})= bar.value
 
   footer
     p Until à la prochaine :-)

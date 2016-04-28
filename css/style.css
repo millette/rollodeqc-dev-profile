@@ -87,6 +87,12 @@ section#charts {
       }
     }
 
+    @media (--only-huge-screen) {
+      & div.bc {
+        lost-column: 1/3;
+      }
+    }
+
     & h2 {
       padding: 0.25rem 0.5rem;
       background: green;
