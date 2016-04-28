@@ -9,4 +9,4 @@ $ npm start
 <https://gitlab.com/rollodeqc/redesign/issues/4>
 
 ## Aperçu
-![smaller](https://gitlab.com/uploads/aecd2109e9963339ef35c451c01e23ce/smaller.jpg)
+![smaller](https://gitlab.com/rollodeqc/redesign/uploads/aecd2109e9963339ef35c451c01e23ce/smaller.jpg)
