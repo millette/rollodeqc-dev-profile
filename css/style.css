@@ -3,7 +3,7 @@
 @custom-media --only-huge-screen (width >= 90rem);
 
 body {
-  background: url(../lgren076.jpg);
+  background: #333;
   font-size: responsive;
   margin: 1rem;
 }
@@ -142,4 +142,9 @@ blockquote {
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
+}
+
+.gray {
+  color: #aaa;
+  font-style: italic;
 }
