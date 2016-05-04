@@ -34,7 +34,7 @@ const preprocess = (dev) => {
   return dev
 }
 
-const devs = require('./devs.json').map(preprocess)
+const devs = preprocess(require('./devs.json'))
 
 const timelineProcess = (x, i) => {
   return {
@@ -44,8 +44,8 @@ const timelineProcess = (x, i) => {
   }
 }
 
-const tl0 = devs[0].timelines[0].data.map(timelineProcess)
-const tl1 = devs[0].timelines[0].data.reverse().map(timelineProcess)
+const tl0 = devs.timelines[0].data.map(timelineProcess)
+const tl1 = devs.timelines[0].data.reverse().map(timelineProcess)
 
 module.exports = {
   entry: [

@@ -6,35 +6,35 @@ block title
 block content
   section
     div#text
-      blockquote= devs[0].bio
+      blockquote= devs.bio
 
       ul
-        if devs[0].blog
+        if devs.blog
           li Blog:&nbsp;
-            a(href=devs[0].blog)= devs[0].blog
-        if devs[0].email
+            a(href=devs.blog)= devs.blog
+        if devs.email
           li Email:&nbsp;
-            a(href='mailto:' + devs[0].email)= devs[0].email
-        li= devs[0].ville
-        if devs[0].disponible
+            a(href='mailto:' + devs.email)= devs.email
+        li= devs.ville
+        if devs.disponible
           li Disponible, contactez le!
-        li Sur GitHub depuis #{devs[0].githubSince}
+        li Sur GitHub depuis #{devs.githubSince}
 
-        if devs[0].orgs.length
-          li Organisations: #{devs[0].orgs.join(', ')}
+        if devs.orgs.length
+          li Organisations: #{devs.orgs.join(', ')}
 
-        if devs[0].bigProjects.length
-          li Big projects: #{devs[0].bigProjects.join(', ')}
+        if devs.bigProjects.length
+          li Big projects: #{devs.bigProjects.join(', ')}
 
-        if devs[0].popProjects.length
-          li Popular projects: #{devs[0].popProjects.join(', ')}
+        if devs.popProjects.length
+          li Popular projects: #{devs.popProjects.join(', ')}
 
         li.gray Participent aux groupes: Python, Ruby (login to edit)
 
     div#photo
-      img(src=devs[0].photo)
-      h1= devs[0].name + ' '
-        small: a(href='https://github.com/' + devs[0].username) (github/#{devs[0].username})
+      img(src=devs.photo)
+      h1= devs.name + ' '
+        small: a(href='https://github.com/' + devs.login) (github/#{devs.login})
 
   section#charts
     div
@@ -44,7 +44,7 @@ block content
 
     div
       // h2 Barcharts
-      each bc in devs[0].barcharts
+      each bc in devs.barcharts
         div.bc
           h3= bc.title
           // p= bc.description

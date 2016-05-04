@@ -1,98 +1,95 @@
-[
-  {
-    "name": "Robin Millette",
-    "username": "millette",
-    "photo": "https://avatars3.githubusercontent.com/u/50741?v=3&s=460",
-    "bio": "Plus de vingt-cinq années de programmation professionnelle, de l'assembleur à Zope en passant par mySQL.",
-    "blog": "http://robin.millette.info/",
-    "email": "robin@millette.info",
-    "ville": "Montréal, Québec",
-    "disponible": true,
-    "githubSince": "2009-01-31",
-    "timelines2": [
-      "Activité",
-      "Nombre de stars",
-      "Nombre de projets",
-      "Nombre de followers",
-      "Nombre de followings"
-    ],
-    "timelines": [
-      {
-        "name": "network",
-        "title": "Réseau social",
-        "description": "Réseau social (following/followers)",
-        "data": [
-          [ 98, 106.2 ],
-          [ 97, 105.9 ],
-          [ 97, 105.9 ],
-          [ 98, 105.8 ],
-          [ 97, 104.2 ],
-          [ 96, 102.9 ],
-          [ 96, 100.9 ],
-          [ 94, 101.8 ]
-        ]
-      }
-    ],
-    "barcharts": [
-      {
-        "name": "languages",
-        "title": "Langages",
-        "description": "Langages (lignes de code)",
-        "data": [
-          { "label": "CSS", "value": 387912 },
-          { "label": "JavaScript", "value": 295758 },
-          { "label": "HTML", "value": 133316 },
-          { "label": "ActionScript", "value": 36375 },
-          { "label": "Python", "value": 12207 },
-          { "label": "Shell", "value": 413 }
-        ]
-      },
-      {
-        "name": "licenses",
-        "title": "Licences",
-        "description": "Licences (nombre de projets)",
-        "data": [
-           {
-            "label": "agpl-3.0",
-            "value": 13
-           },
-           {
-            "label": "mit",
-            "value": 7
-           },
-           {
-            "label": "cc-by-sa-4.0",
-            "value": 1
-           }
-        ]
-      },
-      {
-        "name": "packagers",
-        "title": "Packagers",
-        "description": "Packagers (npm, bower, etc. selon libraries.io)",
-        "data": [
-          {
-            "label": "npm",
-            "value": 8
-          },
-          {
-            "label": "bower",
-            "value": 1
-          }
-        ]
-      }
-    ],
-    "bigProjects": [
-      "rollodeqc-backend",
-      "rollodeqc-frontend"
-    ],
-    "popProjects": [
-      "star-where"
-    ],
-    "orgs": [
-      "rollodeqc",
-      "rockstars"
-    ]
-  }
-]
-
+{
+  "name": "Robin Millette",
+  "username": "millette",
+  "photo": "https://avatars3.githubusercontent.com/u/50741?v=3&s=460",
+  "bio": "Plus de vingt-cinq années de programmation professionnelle, de l'assembleur à Zope en passant par mySQL.",
+  "blog": "http://robin.millette.info/",
+  "email": "robin@millette.info",
+  "ville": "Montréal, Québec",
+  "disponible": true,
+  "githubSince": "2009-01-31",
+  "timelines2": [
+    "Activité",
+    "Nombre de stars",
+    "Nombre de projets",
+    "Nombre de followers",
+    "Nombre de followings"
+  ],
+  "timelines": [
+    {
+      "name": "network",
+      "title": "Réseau social",
+      "description": "Réseau social (following/followers)",
+      "data": [
+        [ 98, 106.2 ],
+        [ 97, 105.9 ],
+        [ 97, 105.9 ],
+        [ 98, 105.8 ],
+        [ 97, 104.2 ],
+        [ 96, 102.9 ],
+        [ 96, 100.9 ],
+        [ 94, 101.8 ]
+      ]
+    }
+  ],
+  "barcharts": [
+    {
+      "name": "languages",
+      "title": "Langages",
+      "description": "Langages (lignes de code)",
+      "data": [
+        { "label": "CSS", "value": 387912 },
+        { "label": "JavaScript", "value": 295758 },
+        { "label": "HTML", "value": 133316 },
+        { "label": "ActionScript", "value": 36375 },
+        { "label": "Python", "value": 12207 },
+        { "label": "Shell", "value": 413 }
+      ]
+    },
+    {
+      "name": "licenses",
+      "title": "Licences",
+      "description": "Licences (nombre de projets)",
+      "data": [
+         {
+          "label": "agpl-3.0",
+          "value": 13
+         },
+         {
+          "label": "mit",
+          "value": 7
+         },
+         {
+          "label": "cc-by-sa-4.0",
+          "value": 1
+         }
+      ]
+    },
+    {
+      "name": "packagers",
+      "title": "Packagers",
+      "description": "Packagers (npm, bower, etc. selon libraries.io)",
+      "data": [
+        {
+          "label": "npm",
+          "value": 8
+        },
+        {
+          "label": "bower",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "bigProjects": [
+    "rollodeqc-backend",
+    "rollodeqc-frontend"
+  ],
+  "popProjects": [
+    "star-where"
+  ],
+  "orgs": [
+    "rollodeqc",
+    "rockstars"
+  ]
+}
