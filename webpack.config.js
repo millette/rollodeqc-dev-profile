@@ -28,7 +28,7 @@ const barchartProcess = (bc) => {
 }
 
 const preprocess = (dev) => {
-  const since = new Date(dev.githubSince)
+  const since = new Date(dev.created_at)
   dev.githubSince = months[since.getMonth()] + ' ' + since.getFullYear()
   dev.barcharts = dev.barcharts.map(barchartProcess)
   return dev

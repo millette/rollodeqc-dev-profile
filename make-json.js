@@ -12,9 +12,39 @@ dev.events = require('./millette-events.json')
 
 var language
 
-//console.log(JSON.stringify(dev, null, ' '))
+dev.timelines = [
+  {
+    'name': 'network',
+    'title': 'Réseau social',
+    'description': 'Réseau social (following/followers)',
+    'data': [
+      [ 98, 106.2 ],
+      [ 97, 105.9 ],
+      [ 97, 105.9 ],
+      [ 98, 105.8 ],
+      [ 97, 104.2 ],
+      [ 96, 102.9 ],
+      [ 96, 100.9 ],
+      [ 94, 101.8 ]
+    ]
+  }
+]
 
-repos = dev.repos
+dev.bigProjects = [
+  'rollodeqc-backend',
+  'rollodeqc-frontend'
+]
+
+dev.popProjects = [
+  'star-where'
+]
+
+dev.orgs = [
+  'rollodeqc',
+  'rockstars'
+]
+
+const repos = dev.repos
   .filter((repo) => repo.languages && repo.languages)
   .map((repo) => repo.languages)
 
@@ -41,9 +71,6 @@ const languages = reds.sort((a, b) => {
   return 0
 }).reverse()
 
-console.log(JSON.stringify(languages, null, ' '))
-
-
 var license
 
 const counts = countBy(dev.repos.filter((repo) => repo.license), (repo) => repo.license.key)
@@ -63,4 +90,37 @@ const licenses = reds2.sort((a, b) => {
   return 0
 }).reverse()
 
-console.log(JSON.stringify(licenses, null, ' '))
+dev.barcharts = [
+  {
+    name: 'languages',
+    title: 'Langages',
+    description: 'Langages (lignes de code)',
+    data: languages
+  },
+  {
+    name: 'licenses',
+    title: 'Licences',
+    description: 'Licences (nombre de projets)',
+    data: licenses
+  },
+  {
+    name: 'packagers',
+    title: 'Packagers',
+    description: 'Packagers (npm, bower, etc. selon libraries.io)',
+    data: [
+      {
+        'label': 'npm',
+        'value': 8
+      },
+      {
+        'label': 'bower',
+        'value': 1
+      }
+    ]
+  }
+]
+
+dev.photo = `https://avatars3.githubusercontent.com/u/${dev.id}?v=3&s=460`
+dev.bio = 'Plus de vingt-cinq années de programmation professionnelle, de l\'assembleur à Zope en passant par mySQL.'
+
+console.log(JSON.stringify(dev, null, ' '))
