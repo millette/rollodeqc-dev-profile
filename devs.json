@@ -39,18 +39,12 @@
         "title": "Langages",
         "description": "Langages (lignes de code)",
         "data": [
-          {
-            "label": "JavaScript",
-            "value": 2500
-          },
-          {
-            "label": "HTML",
-            "value": 200
-          },
-          {
-            "label": "CSS",
-            "value": 500
-          }
+          { "label": "CSS", "value": 387912 },
+          { "label": "JavaScript", "value": 295758 },
+          { "label": "HTML", "value": 133316 },
+          { "label": "ActionScript", "value": 36375 },
+          { "label": "Python", "value": 12207 },
+          { "label": "Shell", "value": 413 }
         ]
       },
       {
@@ -58,18 +52,18 @@
         "title": "Licences",
         "description": "Licences (nombre de projets)",
         "data": [
-          {
-            "label": "MIT",
-            "value": 5
-          },
-          {
-            "label": "AGPLv3",
-            "value": 10
-          },
-          {
-            "label": "GPLv3",
-            "value": 2
-          }
+           {
+            "label": "agpl-3.0",
+            "value": 13
+           },
+           {
+            "label": "mit",
+            "value": 7
+           },
+           {
+            "label": "cc-by-sa-4.0",
+            "value": 1
+           }
         ]
       },
       {
