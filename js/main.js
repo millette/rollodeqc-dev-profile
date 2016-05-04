@@ -1,4 +1,4 @@
-/* globals data1, data2, d3, $ */
+/* globals data1, d3, $ */
 'use strict'
 
 // Adapted from http://bl.ocks.org/mbostock/3884955
@@ -6,13 +6,16 @@ const grapher = (data, sel) => {
   const margin = { top: 20, right: 30, bottom: 30, left: 50 }
   const width = 460 - margin.left - margin.right
   const height = 250 - margin.top - margin.bottom
-  const x = d3.scale.linear().range([0, width])
+  const parseDate = d3.time.format('%Y-%m-%d').parse
+  const x = d3.time.scale().range([0, width])
   const y = d3.scale.linear().range([height, 0])
   const color = d3.scale.category10()
 
   const xAxis = d3.svg.axis()
     .scale(x)
     .orient('bottom')
+    .ticks(d3.time.day, 3)
+    .tickFormat(d3.time.format('%m-%d'))
 
   const yAxis = d3.svg.axis()
     .scale(y)
@@ -33,6 +36,8 @@ const grapher = (data, sel) => {
     .append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
   color.domain(d3.keys(data[0]).filter((key) => key !== 'date'))
+
+  data.forEach((d) => { d.date = parseDate(d.date) })
 
   const cities = color.domain().map((name) => {
     return {
@@ -74,5 +79,16 @@ const grapher = (data, sel) => {
 
 $(() => {
   grapher(data1, '#network')
-  grapher(data2, '#stars')
+  // grapher(data2, '#stars')
 })
+
+/*
+Sat 23 12 PM
+Apr 24 12 PM
+Mon 25 12 PM
+Tue 26 12 PM
+Wed 27 12 PM
+Thu 28 12 PM
+Fri 29 12 PM
+Sat 30
+*/

@@ -36,16 +36,16 @@ const preprocess = (dev) => {
 
 const devs = preprocess(require('./devs.json'))
 
-const timelineProcess = (x, i) => {
+const timelineProcess = (x) => {
   return {
-    date: i,
-    Followers: x[0],
-    Followings: x[1]
+    date: x[0],
+    Followers: x[1],
+    Followings: x[2]
   }
 }
 
 const tl0 = devs.timelines[0].data.map(timelineProcess)
-const tl1 = devs.timelines[0].data.reverse().map(timelineProcess)
+// const tl1 = devs.timelines[0].data.reverse().map(timelineProcess)
 
 module.exports = {
   entry: [
@@ -76,8 +76,8 @@ module.exports = {
   jadeLoader: {
     locals: {
       devs: devs,
-      tl0: tl0,
-      tl1: tl1
+      tl0: tl0
+      // tl1: tl1
     }
   },
   postcss: (webpack) => [

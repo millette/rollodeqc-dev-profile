@@ -6,9 +6,11 @@
 // npm
 const countBy = require('lodash.countby')
 
-const dev = require('./user-millette.json')
-dev.repos = require('./millette-repos.json')
-dev.events = require('./millette-events.json')
+const username = 'jipi'
+
+const dev = require(`./user-${username}.json`)
+dev.repos = require(`./${username}-repos.json`)
+dev.events = require(`./${username}-events.json`)
 
 var language
 
@@ -18,14 +20,14 @@ dev.timelines = [
     'title': 'Réseau social',
     'description': 'Réseau social (following/followers)',
     'data': [
-      [ 98, 106.2 ],
-      [ 97, 105.9 ],
-      [ 97, 105.9 ],
-      [ 98, 105.8 ],
-      [ 97, 104.2 ],
-      [ 96, 102.9 ],
-      [ 96, 100.9 ],
-      [ 94, 101.8 ]
+      [ '2016-04-30', 98, 106.2 ],
+      [ '2016-04-29', 97, 105.9 ],
+      [ '2016-04-28', 97, 105.9 ],
+      [ '2016-04-27', 98, 105.8 ],
+      [ '2016-04-26', 97, 104.2 ],
+      [ '2016-04-25', 96, 102.9 ],
+      [ '2016-04-24', 96, 100.9 ],
+      [ '2016-04-23', 94, 101.8 ]
     ]
   }
 ]
