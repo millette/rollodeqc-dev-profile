@@ -83,26 +83,41 @@ const grapher = (data, sel) => {
 }
 
 const addVega = (el, spec) => {
-  const s = vl.compile(spec)
-  s.actions = false // { source: false, editor: false }
-  s.renderer = 'svg'
-  vg.embed(el, s, (err, result) => {
+/*
+  spec.config = {
+    viewport: [460, 400]
+  }
+*/
+  const s = {
+    mode: 'vega-lite',
+    spec: spec,
+    actions: false, // { source: false, editor: false }
+    renderer: 'svg'
+  }
+  const vegaEl = document.createElement('div')
+  vg.embed(vegaEl, s, (err, result) => {
     if (err) {
       console.log('ERR:', err)
       return
     }
+    const elEl = document.querySelector(el)
+    const titleEl = document.createElement('h5')
+    titleEl.innerHTML = spec.title || spec.description
+    elEl.appendChild(titleEl)
+    elEl.appendChild(vegaEl)
     const svg = result.view._el.firstChild
     const width = svg.getAttribute('width')
     const height = svg.getAttribute('height')
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`)
-    svg.removeAttribute('width')
-    svg.removeAttribute('height')
+    svg.setAttribute('width', '100%')
+    svg.setAttribute('height', '100%')
   })
 }
 
 $(() => {
   const specVL = {
     description: 'Stock prices of 5 Tech Companies Over Time.',
+    title: 'Stock prices of 5 Tech Companies Over Time',
     data: {
       url: 'stocks.csv',
       formatType: 'csv'
