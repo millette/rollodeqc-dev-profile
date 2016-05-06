@@ -95,6 +95,7 @@ const addVega = (el, spec) => {
     renderer: 'svg'
   }
   const vegaEl = document.createElement('div')
+  vegaEl.style.marginTop = '-1rem'
   vg.embed(vegaEl, s, (err, result) => {
     if (err) {
       console.log('ERR:', err)
@@ -102,6 +103,8 @@ const addVega = (el, spec) => {
     }
     const elEl = document.querySelector(el)
     const titleEl = document.createElement('h5')
+    titleEl.style.marginBottom = 0
+    titleEl.style.textAlign = 'center'
     titleEl.innerHTML = spec.title || spec.description
     elEl.appendChild(titleEl)
     elEl.appendChild(vegaEl)
