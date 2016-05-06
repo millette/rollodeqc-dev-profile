@@ -82,6 +82,13 @@ const grapher = (data, sel) => {
     )
 }
 
+const cleanHTML = (h) => h
+  .replace(/&/g, '&amp;')
+  .replace(/"/g, '&quot;')
+  .replace(/'/g, '&#39;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+
 const addVega = (el, spec) => {
 /*
   spec.config = {
@@ -105,7 +112,7 @@ const addVega = (el, spec) => {
     const titleEl = document.createElement('h5')
     titleEl.style.marginBottom = 0
     titleEl.style.textAlign = 'center'
-    titleEl.innerHTML = spec.title || spec.description
+    titleEl.innerHTML = cleanHTML(spec.title || spec.description)
     elEl.appendChild(titleEl)
     elEl.appendChild(vegaEl)
     const svg = result.view._el.firstChild
@@ -119,8 +126,8 @@ const addVega = (el, spec) => {
 
 $(() => {
   const specVL = {
-    description: 'Stock prices of 5 Tech Companies Over Time.',
-    title: 'Stock prices of 5 Tech Companies Over Time',
+    description: 'Stock prices of 5 tech companies over time.',
+    title: 'Stock prices of 5 tech companies over time',
     data: {
       url: 'stocks.csv',
       formatType: 'csv'
