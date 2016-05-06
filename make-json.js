@@ -5,7 +5,11 @@
 
 // npm
 const countBy = require('lodash.countby')
-
+/*
+const getRepos = require('rollodeqc-gh-repos')
+const getUser = require('rollodeqc-gh-user')
+const getEvents = require('rollodeqc-gh-user-events')
+*/
 const username = 'jipi'
 
 const dev = require(`./user-${username}.json`)

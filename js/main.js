@@ -1,5 +1,10 @@
-/* globals data1, d3, $ */
+/* globals data1, $ */
 'use strict'
+
+const d3 = require('d3')
+const vl = require('vega-lite')
+const vg = require('vega')
+vg.embed = require('vega-embed')
 
 // Adapted from http://bl.ocks.org/mbostock/3884955
 const grapher = (data, sel) => {
@@ -77,18 +82,28 @@ const grapher = (data, sel) => {
     )
 }
 
+const addVega = () => {
+  const spec = {
+    description: 'Stock prices of 5 Tech Companies Over Time.',
+    data: {
+      url: 'stocks.csv',
+      formatType: 'csv'
+    },
+    mark: 'line',
+    encoding: {
+      x: { field: 'date', type: 'temporal' },
+      y: { field: 'price', type: 'quantitative' },
+      color: { field: 'symbol', type: 'nominal' }
+    }
+  }
+
+  const s = vl.compile(spec)
+  s.actions = { source: false, editor: false }
+  vg.embed('#vega-lite', s)
+}
+
 $(() => {
   grapher(data1, '#network')
   // grapher(data2, '#stars')
+  addVega()
 })
-
-/*
-Sat 23 12 PM
-Apr 24 12 PM
-Mon 25 12 PM
-Tue 26 12 PM
-Wed 27 12 PM
-Thu 28 12 PM
-Fri 29 12 PM
-Sat 30
-*/
