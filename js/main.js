@@ -82,8 +82,26 @@ const grapher = (data, sel) => {
     )
 }
 
-const addVega = () => {
-  const spec = {
+const addVega = (el, spec) => {
+  const s = vl.compile(spec)
+  s.actions = false // { source: false, editor: false }
+  s.renderer = 'svg'
+  vg.embed(el, s, (err, result) => {
+    if (err) {
+      console.log('ERR:', err)
+      return
+    }
+    const svg = result.view._el.firstChild
+    const width = svg.getAttribute('width')
+    const height = svg.getAttribute('height')
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`)
+    svg.removeAttribute('width')
+    svg.removeAttribute('height')
+  })
+}
+
+$(() => {
+  const specVL = {
     description: 'Stock prices of 5 Tech Companies Over Time.',
     data: {
       url: 'stocks.csv',
@@ -96,14 +114,7 @@ const addVega = () => {
       color: { field: 'symbol', type: 'nominal' }
     }
   }
-
-  const s = vl.compile(spec)
-  s.actions = { source: false, editor: false }
-  vg.embed('#vega-lite', s)
-}
-
-$(() => {
   grapher(data1, '#network')
   // grapher(data2, '#stars')
-  addVega()
+  addVega('#vega-lite', specVL)
 })
