@@ -3,19 +3,36 @@
 'use strict'
 
 // npm
-const countBy = require('lodash.countby')
-/*
+// const omitBy = require('lodash.omitby')
+// const countBy = require('lodash.countby')
 const getRepos = require('rollodeqc-gh-repos')
 const getUser = require('rollodeqc-gh-user')
 const getEvents = require('rollodeqc-gh-user-events')
-*/
 
-const username = 'jipi'
+const username = 'millette'
 
+getUser(username)
+  .then((dev) => Promise.all([getRepos(username), getEvents(username)])
+    .then((ps) => {
+      dev.repos = ps[0]
+      dev.events = ps[1]
+      return dev
+    })
+  )
+  .then((dev) => {
+    console.log(JSON.stringify(dev, null, ' '))
+  })
+  .catch((e) => {
+    console.log('ERROR:', e)
+  })
+
+/*
 const dev = require(`./user-${username}.json`)
 dev.repos = require(`./${username}-repos.json`)
 dev.events = require(`./${username}-events.json`)
+*/
 
+/*
 var language
 
 dev.timelines = [
@@ -130,3 +147,4 @@ dev.photo = `https://avatars3.githubusercontent.com/u/${dev.id}?v=3&s=460`
 dev.bio = 'Plus de vingt-cinq années de programmation professionnelle, de l\'assembleur à Zope en passant par mySQL.'
 
 console.log(JSON.stringify(dev, null, ' '))
+*/
