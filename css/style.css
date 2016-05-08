@@ -33,12 +33,12 @@ li {
 }
 
 div#text {
-  lost-column: 1/2;
+  lost-column: 2/3;
 }
 
 div#photo {
   text-align: center;
-  lost-column: 1/2;
+  lost-column: 1/3;
 }
 
 section#charts {
@@ -88,4 +88,8 @@ blockquote {
 .gray {
   color: #aaa;
   font-style: italic;
+}
+
+footer {
+  color: #aaa;
 }

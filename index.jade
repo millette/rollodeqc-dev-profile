@@ -18,21 +18,18 @@ block content
           li Disponible, contactez le!
         li Sur GitHub depuis #{devs.githubSince}
 
-        if devs.orgs.length
-          li Organisations: #{devs.orgs.join(', ')}
+        li Organisations: ...
 
-        if devs.bigProjects.length
-          li Big projects: #{devs.bigProjects.join(', ')}
+        li Big projects: ...
 
-        if devs.popProjects.length
-          li Popular projects: #{devs.popProjects.join(', ')}
+        li Popular projects: ...
 
         li.gray Participent aux groupes: Python, Ruby (login to edit)
 
       #vega-lite
 
     div#photo
-      img(src=devs.photo)
+      img(src='https://avatars3.githubusercontent.com/u/' + devs.id + '?v=3&s=460')
       h1= devs.name + ' '
         small: a(href='https://github.com/' + devs.login) (github/#{devs.login})
 

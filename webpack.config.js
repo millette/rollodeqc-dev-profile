@@ -21,7 +21,7 @@ const preprocess = (dev) => {
   return dev
 }
 
-const devs = preprocess(require('./devs.json'))
+const devs = preprocess(require('./millette-user.json'))
 
 module.exports = {
   entry: [

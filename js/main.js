@@ -1,7 +1,5 @@
-/* globals data1 */
 'use strict'
 
-const d3 = require('d3')
 const vg = require('vega')
 vg.embed = require('vega-embed')
 vg.lite = require('vega-lite')
@@ -14,11 +12,6 @@ const cleanHTML = (h) => h
   .replace(/>/g, '&gt;')
 
 const addVega = (el, spec) => {
-/*
-  spec.config = {
-    viewport: [460, 400]
-  }
-*/
   const s = {
     mode: 'vega-lite',
     spec: spec,
@@ -52,17 +45,15 @@ const addVega = (el, spec) => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const specVL = {
-    description: 'Stock prices of 5 tech companies over time.',
-    title: 'Stock prices of 5 tech companies over time',
+    description: 'Last events',
     data: {
-      url: 'stocks.csv',
-      formatType: 'csv'
+      url: 'millette-events.json'
     },
     mark: 'line',
     encoding: {
-      x: { field: 'date', type: 'temporal' },
-      y: { field: 'price', type: 'quantitative' },
-      color: { field: 'symbol', type: 'nominal' }
+      x: { timeUnit: 'day', field: 'created_at', type: 'temporal' },
+      y: { aggregate: 'count', field: 'type', type: 'quantitative' },
+      color: { field: 'type', type: 'nominal' }
     }
   }
   addVega('#vega-lite', specVL)
