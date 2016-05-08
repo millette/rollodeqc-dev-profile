@@ -6,8 +6,6 @@ block title
 block content
   section
     div#text
-      // blockquote= devs.bio
-
       ul
         if devs.blog
           li Blog:&nbsp;
@@ -31,34 +29,12 @@ block content
 
         li.gray Participent aux groupes: Python, Ruby (login to edit)
 
+      #vega-lite
+
     div#photo
       img(src=devs.photo)
       h1= devs.name + ' '
         small: a(href='https://github.com/' + devs.login) (github/#{devs.login})
 
-  section#charts
-    div
-      // h2 Timelines
-      #network
-      #stars
-      #vega-lite
-
-    div
-      // h2 Barcharts
-      each bc in devs.barcharts
-        div.bc
-          h3= bc.title
-          // p= bc.description
-          if bc.data && bc.data.length
-            ul.bar(class=bc.name)
-              each bar in bc.data
-                li
-                  span= bar.label
-                  small(style={width: 0.7 * (bar.value / (bc.max / 100)) + '%'})= bar.value
-
   footer
     p Until à la prochaine :-)
-
-  script(type='text/javascript').
-    var data1 = !{JSON.stringify(tl0)}
-    // var data2 = !{JSON.stringify(tl1)}
