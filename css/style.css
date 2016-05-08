@@ -93,3 +93,11 @@ blockquote {
 footer {
   color: #aaa;
 }
+
+.vega-actions {
+  margin-top: -0.25rem;
+  padding-top: 0;
+  & a {
+    margin: 0 0.25rem;
+  }
+}

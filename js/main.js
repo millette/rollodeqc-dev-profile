@@ -15,7 +15,7 @@ const addVega = (el, spec) => {
   const s = {
     mode: 'vega-lite',
     spec: spec,
-    actions: false, // { source: false, editor: false }
+    // actions: false, // { source: false, editor: false }
     renderer: 'svg'
   }
   const vegaEl = document.createElement('div')
@@ -43,18 +43,36 @@ const addVega = (el, spec) => {
   })
 }
 
+const wants = [
+  'CreateEvent',
+  'IssuesEvent',
+  'IssueCommentEvent'
+]
+
+const j2 = window.fetch('./events.json')
+  .then((response) => response.json())
+  .then((json) => wants && wants.length
+    ? json.filter((i) => wants.indexOf(i.type) !== -1)
+    : json
+  )
+
 document.addEventListener('DOMContentLoaded', () => {
-  const specVL = {
-    description: 'Last events',
-    data: {
-      url: 'millette-events.json'
-    },
-    mark: 'line',
-    encoding: {
-      x: { timeUnit: 'day', field: 'created_at', type: 'temporal' },
-      y: { aggregate: 'count', field: 'type', type: 'quantitative' },
-      color: { field: 'type', type: 'nominal' }
+  j2.then((json) => {
+    const specVL = {
+      description: 'Last events',
+      data: { values: json },
+      mark: 'bar',
+      encoding: {
+        x: { timeUnit: 'yearmonthdate', field: 'created_at', type: 'temporal' },
+        y: { aggregate: 'count', field: '*', type: 'quantitative' },
+        color: { field: 'type', type: 'nominal' }
+      }
     }
-  }
-  addVega('#vega-lite', specVL)
+    addVega('#vega-lite', specVL)
+    // specVL.mark = 'line'
+    // addVega('#vega-lite2', specVL)
+  })
+  .catch((ex) => {
+    console.log('parsing failed', ex)
+  })
 })

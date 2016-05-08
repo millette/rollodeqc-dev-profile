@@ -1,0 +1,4543 @@
+[
+ {
+  "id": "3960935697",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "fix-brittle-tests",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:59:47Z"
+ },
+ {
+  "id": "3960935609",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1092701283,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "9eb7a5a877a43faf47f4164f2819d7349162aa81": "Fix brittle tests (#31)\n\n* add track endpoint and integration support\r\n\r\n* implement support for Track to Intercom\r\n\r\n* add a missing test to the Track handler\r\n\r\n* add comments\r\n\r\n* move fakes at the bottom\r\n\r\n* remove useless output\r\n\r\n* fix brittle Intercom tests\r\n\r\n* add missing tests to the Identify handler"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:59:46Z"
+ },
+ {
+  "id": "3960935575",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 31,
+   "pull_request": {
+    "id": 68541539,
+    "state": "closed",
+    "title": "Fix brittle tests",
+    "body": "Fixes #3 for now.",
+    "created_at": "2016-05-02T09:52:39Z",
+    "updated_at": "2016-05-02T09:59:45Z",
+    "closed_at": "2016-05-02T09:59:45Z",
+    "merged_at": "2016-05-02T09:59:45Z",
+    "merge_commit_sha": "9eb7a5a877a43faf47f4164f2819d7349162aa81",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 9,
+    "additions": 218,
+    "deletions": 14,
+    "changed_files": 3
+   }
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:59:45Z"
+ },
+ {
+  "id": "3960935573",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145221284,
+    "number": 3,
+    "title": "add tests for the integration system, and everything",
+    "labels": [
+     "in progress"
+    ],
+    "state": "closed",
+    "comments": 1,
+    "created_at": "2016-04-01T16:13:51Z",
+    "updated_at": "2016-05-02T09:59:45Z",
+    "closed_at": "2016-05-02T09:59:45Z",
+    "body": "add tests for the plugin system, and everything else (why not before? This is a PoC, not sure the structure of the project and data will stay the same yet)\n\nWhat I have in mind that needs to be tested and is not at the moment:\n- [x]  `handlers/identify.go`\n- [ ]  `integrtions/registry.go`\n- [ ]  `integrtions/integration.go`"
+   }
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:59:45Z"
+ },
+ {
+  "id": "3960925955",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1092697589,
+   "ref": "refs/heads/fix-brittle-tests",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "505c369cd98b78dd6ab1c8ba9208733231bbadb2": "Merge pull request #27 from jipiboily/extract-auth-middleware\n\nextract auth to middleware",
+      "c8d5c7c3898a3214a4e0895312dd680a69b162cb": "Merge pull request #29 from jipiboily/change-event-for-identification\n\nChange event for identification",
+      "4b9ab96c40ac7e1f54bdb406ad94251cbb659479": "Add Track (#30)\n\n* add track endpoint and integration support\r\n\r\n* implement support for Track to Intercom\r\n\r\n* add a missing test to the Track handler\r\n\r\n* add comments\r\n\r\n* move fakes at the bottom",
+      "6c1923f59a960585f4db4df518e5cf49ab8cca39": "Merge branch 'master' into fix-brittle-tests"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:56:20Z"
+ },
+ {
+  "id": "3960915457",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 31,
+   "pull_request": {
+    "id": 68541539,
+    "state": "open",
+    "title": "Fix brittle tests",
+    "body": "Related to #3.",
+    "created_at": "2016-05-02T09:52:39Z",
+    "updated_at": "2016-05-02T09:52:39Z",
+    "mergeable_state": "unknown",
+    "commits": 8,
+    "additions": 701,
+    "deletions": 32,
+    "changed_files": 14,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:52:39Z"
+ },
+ {
+  "id": "3960914767",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "fix-brittle-tests",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:52:24Z"
+ },
+ {
+  "id": "3960881570",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "add-track",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:40:34Z"
+ },
+ {
+  "id": "3960881494",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1092681112,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "4b9ab96c40ac7e1f54bdb406ad94251cbb659479": "Add Track (#30)\n\n* add track endpoint and integration support\r\n\r\n* implement support for Track to Intercom\r\n\r\n* add a missing test to the Track handler\r\n\r\n* add comments\r\n\r\n* move fakes at the bottom"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:40:32Z"
+ },
+ {
+  "id": "3960881482",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 30,
+   "pull_request": {
+    "id": 68539711,
+    "state": "closed",
+    "title": "Add Track",
+    "body": "Closes #6.",
+    "created_at": "2016-05-02T09:31:59Z",
+    "updated_at": "2016-05-02T09:40:32Z",
+    "closed_at": "2016-05-02T09:40:31Z",
+    "merged_at": "2016-05-02T09:40:31Z",
+    "merge_commit_sha": "4b9ab96c40ac7e1f54bdb406ad94251cbb659479",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 5,
+    "additions": 490,
+    "deletions": 25,
+    "changed_files": 13
+   }
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:40:32Z"
+ },
+ {
+  "id": "3960881480",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145221510,
+    "number": 6,
+    "title": "add Track to track events in integrations",
+    "labels": [
+     "in progress"
+    ],
+    "state": "closed",
+    "created_at": "2016-04-01T16:14:57Z",
+    "updated_at": "2016-05-02T09:40:31Z",
+    "closed_at": "2016-05-02T09:40:31Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:40:32Z"
+ },
+ {
+  "id": "3960864652",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1092674901,
+   "ref": "refs/heads/add-track",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "059b194853444ea3dd7985212979dff823aaa4a4": "move fakes at the bottom"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:34:36Z"
+ },
+ {
+  "id": "3960857132",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 30,
+   "pull_request": {
+    "id": 68539711,
+    "state": "open",
+    "title": "Add Track",
+    "body": "Closes #6.",
+    "created_at": "2016-05-02T09:31:59Z",
+    "updated_at": "2016-05-02T09:31:59Z",
+    "mergeable_state": "unknown",
+    "commits": 4,
+    "additions": 490,
+    "deletions": 25,
+    "changed_files": 13,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:31:59Z"
+ },
+ {
+  "id": "3960848810",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "add-track",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-05-02T09:29:17Z"
+ },
+ {
+  "id": "3956081768",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "change-event-for-identification",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:36:06Z"
+ },
+ {
+  "id": "3956081741",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1090941192,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "e8ee3f8c1b1263168946ad2f066ab6f2ead7140d": "change Event for Indentification\n\nI was about to add the Track, but I need Event for Track to be freed up\nideally as it makes more sense.",
+      "c8d5c7c3898a3214a4e0895312dd680a69b162cb": "Merge pull request #29 from jipiboily/change-event-for-identification\n\nChange event for identification"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:36:02Z"
+ },
+ {
+  "id": "3956081721",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 29,
+   "pull_request": {
+    "id": 68451000,
+    "state": "closed",
+    "title": "Change event for identification",
+    "body": "I was about to add the Track, but I need Event for Track to be freed up\nideally as it makes more sense.",
+    "created_at": "2016-04-30T00:32:02Z",
+    "updated_at": "2016-04-30T00:36:02Z",
+    "closed_at": "2016-04-30T00:36:02Z",
+    "merged_at": "2016-04-30T00:36:02Z",
+    "merge_commit_sha": "c8d5c7c3898a3214a4e0895312dd680a69b162cb",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 1,
+    "additions": 37,
+    "deletions": 36,
+    "changed_files": 7
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:36:02Z"
+ },
+ {
+  "id": "3956074682",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 29,
+   "pull_request": {
+    "id": 68451000,
+    "state": "open",
+    "title": "Change event for identification",
+    "body": "I was about to add the Track, but I need Event for Track to be freed up\nideally as it makes more sense.",
+    "created_at": "2016-04-30T00:32:02Z",
+    "updated_at": "2016-04-30T00:32:02Z",
+    "merge_commit_sha": "b39d3de09173a4e88b277c67a3793174e6e68f53",
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "commits": 1,
+    "additions": 37,
+    "deletions": 36,
+    "changed_files": 7,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:32:02Z"
+ },
+ {
+  "id": "3956074655",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "change-event-for-identification",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:32:01Z"
+ },
+ {
+  "id": "3956073217",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "extract-auth-middleware",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:31:15Z"
+ },
+ {
+  "id": "3956072196",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "extract-auth-middleware",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-30T00:30:45Z"
+ },
+ {
+  "id": "3955141614",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 151953084,
+    "number": 28,
+    "title": "Add Page to track pageviews in integrations",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-29T19:43:10Z",
+    "updated_at": "2016-04-29T19:43:10Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-29T19:43:10Z"
+ },
+ {
+  "id": "3955110067",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "extract-auth-middleware",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-29T19:35:14Z"
+ },
+ {
+  "id": "3955108606",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1090604488,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "c47349738b8aad3df20c5b1ae255183fa4930404": "extract auth to middleware",
+      "4c4d812d19659fef9c7c3057a08eb55fba7780bc": "remove leaking of API key",
+      "505c369cd98b78dd6ab1c8ba9208733231bbadb2": "Merge pull request #27 from jipiboily/extract-auth-middleware\n\nextract auth to middleware"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-29T19:34:53Z"
+ },
+ {
+  "id": "3955108543",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 27,
+   "pull_request": {
+    "id": 68417830,
+    "state": "closed",
+    "title": "extract auth to middleware",
+    "body": "Closes #5 ",
+    "created_at": "2016-04-29T18:57:56Z",
+    "updated_at": "2016-04-29T19:34:52Z",
+    "closed_at": "2016-04-29T19:34:52Z",
+    "merged_at": "2016-04-29T19:34:52Z",
+    "merge_commit_sha": "505c369cd98b78dd6ab1c8ba9208733231bbadb2",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 2,
+    "additions": 80,
+    "deletions": 12,
+    "changed_files": 4
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-29T19:34:52Z"
+ },
+ {
+  "id": "3955108542",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145221446,
+    "number": 5,
+    "title": "move the API key validation in a middleware",
+    "labels": [
+     "in progress"
+    ],
+    "state": "closed",
+    "created_at": "2016-04-01T16:14:36Z",
+    "updated_at": "2016-04-29T19:34:52Z",
+    "closed_at": "2016-04-29T19:34:52Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-29T19:34:52Z"
+ },
+ {
+  "id": "3954963332",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1090555216,
+   "ref": "refs/heads/extract-auth-middleware",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "4c4d812d19659fef9c7c3057a08eb55fba7780bc": "remove leaking of API key"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-29T18:59:27Z"
+ },
+ {
+  "id": "3954956235",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 27,
+   "pull_request": {
+    "id": 68417830,
+    "state": "open",
+    "title": "extract auth to middleware",
+    "body": "Closes #5 ",
+    "created_at": "2016-04-29T18:57:56Z",
+    "updated_at": "2016-04-29T18:57:56Z",
+    "mergeable_state": "unknown",
+    "commits": 1,
+    "additions": 83,
+    "deletions": 12,
+    "changed_files": 4,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-29T18:57:56Z"
+ },
+ {
+  "id": "3954955550",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "extract-auth-middleware",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-29T18:57:47Z"
+ },
+ {
+  "id": "3921741878",
+  "type": "WatchEvent",
+  "repo": {
+   "id": 55727046,
+   "name": "handwritingio/go-client"
+  },
+  "payload": {
+   "action": "started"
+  },
+  "public": true,
+  "created_at": "2016-04-22T01:01:21Z"
+ },
+ {
+  "id": "3910867560",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1074514567,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "cf3f2be3e036943baff452ad7577acb4c53943f0": "fix center alignment of logo"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-20T01:27:33Z"
+ },
+ {
+  "id": "3910863878",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1074513232,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "53517a4384eae95d5887e1bf9c6a7ea278db3c51": "add logo in the README\n\nThanks @juliankrispel :grinning: :heart:"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-20T01:25:51Z"
+ },
+ {
+  "id": "3879609690",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 147839481,
+    "number": 287,
+    "title": "How to remove the lines above and below a post header?",
+    "labels": [],
+    "state": "closed",
+    "comments": 3,
+    "created_at": "2016-04-12T18:46:08Z",
+    "updated_at": "2016-04-12T19:11:46Z",
+    "closed_at": "2016-04-12T19:11:46Z",
+    "body": "There are lines above and below each post header. I'd like to remove the line above and remove the line below?"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-12T19:11:46Z"
+ },
+ {
+  "id": "3879609688",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 147839481,
+    "number": 287,
+    "title": "How to remove the lines above and below a post header?",
+    "user": {
+     "login": "nitinsavant",
+     "id": 1479015,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 3,
+    "created_at": "2016-04-12T18:46:08Z",
+    "updated_at": "2016-04-12T19:11:46Z",
+    "closed_at": "2016-04-12T19:11:46Z",
+    "body": "There are lines above and below each post header. I'd like to remove the line above and remove the line below?"
+   },
+   "comment": {
+    "id": 209058385,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-12T19:11:46Z",
+    "updated_at": "2016-04-12T19:11:46Z",
+    "body": "I would probably just hide them, with CSS...look at https://github.com/jipiboily/monologue/wiki/Customizations on how to do that."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-12T19:11:46Z"
+ },
+ {
+  "id": "3879490067",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 147839481,
+    "number": 287,
+    "title": "How to remove the lines above and below a post header?",
+    "user": {
+     "login": "nitinsavant",
+     "id": 1479015,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-04-12T18:46:08Z",
+    "updated_at": "2016-04-12T18:47:04Z",
+    "body": "There are lines above and below each post header. I'd like to remove the line above and remove the line below?"
+   },
+   "comment": {
+    "id": 209049918,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-12T18:47:04Z",
+    "updated_at": "2016-04-12T18:47:04Z",
+    "body": "Can you be more explicit, or maybe share a screenshot or code sample? It's been a long time, and I don't know exactly what you are talking about... 😕 "
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-12T18:47:05Z"
+ },
+ {
+  "id": "3877860629",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 147503163,
+    "number": 286,
+    "title": "Remove like/+1 buttons at bottom of post",
+    "user": {
+     "login": "nitinsavant",
+     "id": 1479015,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 3,
+    "created_at": "2016-04-11T17:50:45Z",
+    "updated_at": "2016-04-12T13:39:49Z",
+    "closed_at": "2016-04-11T23:41:28Z",
+    "body": "At the bottom of an individual post, it says: \"Loved what you just read? Share it!\" \r\n\r\nHow can I remove this text and the share icons from every post?"
+   },
+   "comment": {
+    "id": 208909627,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-12T13:39:49Z",
+    "updated_at": "2016-04-12T13:39:49Z",
+    "body": "Yup, I didn't know you already had it, and I prefer to overwrite the least amount of things possible to be future proof, even if Monologue is not changing so much.\n\n\nOn Apr 12, 2016, 8:25 AM -0400, Nitin Savant<notifications@github.com>, wrote:\n>  \n> That definitely works. Another option (that I went with) is to comment the line below from the \"show.html.erb\" file.\n>  \n>  \n> <%= render \"monologue/posts/social_sharing\" %>\n>  \n>  \n> —\n> You are receiving this because you modified the open/close state.\n> Reply to this email directly orview it on GitHub(https://github.com/jipiboily/monologue/issues/286#issuecomment-208878517)\n>  \n>  \n>  \n\n\n"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-12T13:39:49Z"
+ },
+ {
+  "id": "3875206613",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 147503163,
+    "number": 286,
+    "title": "Remove like/+1 buttons at bottom of post",
+    "labels": [],
+    "state": "closed",
+    "comments": 1,
+    "created_at": "2016-04-11T17:50:45Z",
+    "updated_at": "2016-04-11T23:41:28Z",
+    "closed_at": "2016-04-11T23:41:28Z",
+    "body": "At the bottom of an individual post, it says: \"Loved what you just read? Share it!\" \r\n\r\nHow can I remove this text and the share icons from every post?"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-11T23:41:28Z"
+ },
+ {
+  "id": "3875206579",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 147503163,
+    "number": 286,
+    "title": "Remove like/+1 buttons at bottom of post",
+    "user": {
+     "login": "nitinsavant",
+     "id": 1479015,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-04-11T17:50:45Z",
+    "updated_at": "2016-04-11T23:41:27Z",
+    "body": "At the bottom of an individual post, it says: \"Loved what you just read? Share it!\" \r\n\r\nHow can I remove this text and the share icons from every post?"
+   },
+   "comment": {
+    "id": 208620608,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-11T23:41:27Z",
+    "updated_at": "2016-04-11T23:41:27Z",
+    "body": "Overwrite [this file](https://github.com/jipiboily/monologue/blob/master/app/views/monologue/posts/_social_sharing.html.erb) at the exact same location in your project with a blank file and you should be good."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-11T23:41:27Z"
+ },
+ {
+  "id": "3875162595",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 146640707,
+    "number": 279,
+    "title": "Using SKIP LOCKED on Postgres 9.5",
+    "user": {
+     "login": "MSch",
+     "id": 7475,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 9,
+    "created_at": "2016-04-07T14:20:42Z",
+    "updated_at": "2016-04-11T23:26:43Z",
+    "body": "It looks like `lock_head` is a perfect candidate for the new SKIP LOCKED feature in Postgres 9.5: http://michael.otacoo.com/postgresql-2/postgres-9-5-feature-highlight-skip-locked-row-level/\r\n\r\nIf I'm not missing something then using SKIP LOCKED `lock_head` can be simplified to this:\r\n\r\n```sql\r\nUPDATE queue_classic_jobs\r\nSET locked_at = now(), locked_by = pg_backend_pid()\r\nWHERE id IN (\r\n  SELECT id FROM queue_classic_jobs\r\n  WHERE locked_at IS NULL AND q_name = $1 AND scheduled_at <= now()\r\n  LIMIT 1\r\n  FOR NO KEY UPDATE SKIP LOCKED\r\n)\r\nRETURNING *\r\n```"
+   },
+   "comment": {
+    "id": 208615432,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-11T23:26:43Z",
+    "updated_at": "2016-04-11T23:26:43Z",
+    "body": "@shosti totally understand that. \"Back in the days\", I have been an advocate to remove QC from RF's stack (for various reasons).\r\n\r\n@MSch looks like pretty cool upgrades! I guess we now need to figure out what to do in terms of maintenance with QC...as apparently most maintainers are either inactive or are not using it anymore.\r\n\r\n@smathieu are you using QC at your job?"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-11T23:26:43Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3872137622",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3434202,
+   "name": "jipiboily/spree_multi_lingual"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 147395428,
+    "number": 51,
+    "title": "Use Italian as default language.",
+    "user": {
+     "login": "cristianogregnanin",
+     "id": 3127475,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-04-11T11:15:14Z",
+    "updated_at": "2016-04-11T12:52:39Z",
+    "body": "Hy, is possible to use only `:it` language. I need to disable all non italian routes and I need to make `:it` the default language. I need some special configuration?"
+   },
+   "comment": {
+    "id": 208325044,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-11T12:52:39Z",
+    "updated_at": "2016-04-11T12:52:39Z",
+    "body": "This project is deprecated. I don't recall how it works at all. Everything from this gem is included in more recent versions of Spree AFAIK."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-11T12:52:39Z"
+ },
+ {
+  "id": "3867668548",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 146640707,
+    "number": 279,
+    "title": "Using SKIP LOCKED on Postgres 9.5",
+    "user": {
+     "login": "MSch",
+     "id": 7475,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 5,
+    "created_at": "2016-04-07T14:20:42Z",
+    "updated_at": "2016-04-09T12:24:24Z",
+    "body": "It looks like `lock_head` is a perfect candidate for the new SKIP LOCKED feature in Postgres 9.5: http://michael.otacoo.com/postgresql-2/postgres-9-5-feature-highlight-skip-locked-row-level/\r\n\r\nIf I'm not missing something then using SKIP LOCKED `lock_head` can be simplified to this:\r\n\r\n```sql\r\nUPDATE queue_classic_jobs\r\nSET locked_at = now(), locked_by = pg_backend_pid()\r\nWHERE id IN (\r\n  SELECT id FROM queue_classic_jobs\r\n  WHERE locked_at IS NULL AND q_name = $1 AND scheduled_at <= now()\r\n  LIMIT 1\r\n  FOR NO KEY UPDATE SKIP LOCKED\r\n)\r\nRETURNING *\r\n```"
+   },
+   "comment": {
+    "id": 207782663,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-09T12:24:24Z",
+    "updated_at": "2016-04-09T12:24:24Z",
+    "body": "Just FYI, I am not using QC anymore at all...so I guess if you send a PR it might take some time for it to be reviewed & merged...\r\n\r\n@smathieu are you still using QC?\r\n@ukd1 you are still using QC, right? Anyone from your teams up for some QC maintenance? I think that if this turns into a PR, this could be super useful for you. /cc @shosti "
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-09T12:24:24Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3859709165",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 146640707,
+    "number": 279,
+    "title": "Using SKIP LOCKED on Postgres 9.5",
+    "user": {
+     "login": "MSch",
+     "id": 7475,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-04-07T14:20:42Z",
+    "updated_at": "2016-04-07T15:19:15Z",
+    "body": "It looks like `lock_head` is a perfect candidate for the new SKIP LOCKED feature in Postgres 9.5: http://michael.otacoo.com/postgresql-2/postgres-9-5-feature-highlight-skip-locked-row-level/\r\n\r\nIf I'm not missing something then using SKIP LOCKED `lock_head` can be simplified to this:\r\n\r\n```sql\r\nUPDATE queue_classic_jobs\r\nSET locked_at = now(), locked_by = pg_backend_pid()\r\nWHERE id IN (\r\n  SELECT id FROM queue_classic_jobs\r\n  WHERE locked_at IS NULL AND q_name = $1 AND scheduled_at <= now()\r\n  LIMIT 1\r\n  FOR NO KEY UPDATE SKIP LOCKED\r\n)\r\nRETURNING *\r\n```"
+   },
+   "comment": {
+    "id": 206950052,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-07T15:19:14Z",
+    "updated_at": "2016-04-07T15:19:14Z",
+    "body": "If someone do it, it would be interesting to see benchmarks, because from experience this is the bottleneck with a lot of load...when we had say over 100 workers hitting `lock_head` at the same time, lock_head was using a lot of the DB CPU time.\r\n\r\nWhat do you think @senny?"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-07T15:19:15Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3848438346",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/move-handlers",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-05T14:15:34Z"
+ },
+ {
+  "id": "3848438202",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1052025198,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "26fc674165755ff3140944345653c62d33494113": "move the API handlers to their own package",
+      "3952104695872eca9121b87ecd00e4b5389a7b86": "Merge pull request #25 from jipiboily/feature/move-handlers\n\nmove the API handlers to their own package"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-05T14:15:33Z"
+ },
+ {
+  "id": "3848438186",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 25,
+   "pull_request": {
+    "id": 65310341,
+    "state": "closed",
+    "title": "move the API handlers to their own package",
+    "created_at": "2016-04-05T14:07:04Z",
+    "updated_at": "2016-04-05T14:15:32Z",
+    "closed_at": "2016-04-05T14:15:32Z",
+    "merged_at": "2016-04-05T14:15:32Z",
+    "merge_commit_sha": "3952104695872eca9121b87ecd00e4b5389a7b86",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 1,
+    "additions": 89,
+    "deletions": 76,
+    "changed_files": 3
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T14:15:33Z"
+ },
+ {
+  "id": "3848426195",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 146002683,
+    "number": 26,
+    "title": "Add godoc",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-05T14:13:20Z",
+    "updated_at": "2016-04-05T14:13:20Z",
+    "body": "Badge and everything it needs to be useful."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T14:13:21Z"
+ },
+ {
+  "id": "3848392145",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 25,
+   "pull_request": {
+    "id": 65310341,
+    "state": "open",
+    "title": "move the API handlers to their own package",
+    "created_at": "2016-04-05T14:07:04Z",
+    "updated_at": "2016-04-05T14:07:04Z",
+    "merge_commit_sha": "8cd3e0a6264c13ec66a46feb7b5aeff15bf317da",
+    "mergeable": true,
+    "mergeable_state": "unstable",
+    "commits": 1,
+    "additions": 89,
+    "deletions": 76,
+    "changed_files": 3,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T14:07:05Z"
+ },
+ {
+  "id": "3848391951",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/move-handlers",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-05T14:07:04Z"
+ },
+ {
+  "id": "3848301533",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1051976650,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "2c76dbf4fb5285790a57e1eacda567ffcd5bc123": "fix the Waffle badge\n\nCloses #24"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-05T13:50:14Z"
+ },
+ {
+  "id": "3848301515",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145993229,
+    "number": 24,
+    "title": "Waffle badge broken?",
+    "labels": [
+     "ready"
+    ],
+    "state": "closed",
+    "comments": 4,
+    "created_at": "2016-04-05T13:43:37Z",
+    "updated_at": "2016-04-05T13:50:14Z",
+    "closed_at": "2016-04-05T13:50:14Z",
+    "body": "It shows zero stories in progress, but there is one!\n\nAny idea @GabLeRoux"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T13:50:14Z"
+ },
+ {
+  "id": "3848296901",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145993229,
+    "number": 24,
+    "title": "Waffle badge broken?",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "ready"
+    ],
+    "state": "open",
+    "comments": 4,
+    "created_at": "2016-04-05T13:43:37Z",
+    "updated_at": "2016-04-05T13:49:21Z",
+    "body": "It shows zero stories in progress, but there is one!\n\nAny idea @GabLeRoux"
+   },
+   "comment": {
+    "id": 205813349,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-05T13:49:21Z",
+    "updated_at": "2016-04-05T13:49:21Z",
+    "body": "Ok, URL should be `https://badge.waffle.io/jipiboily/forwardlytics.svg?label=In%20Progress&title=In%20Progress`, fixing."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T13:49:22Z"
+ },
+ {
+  "id": "3848275901",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145993229,
+    "number": 24,
+    "title": "Waffle badge broken?",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "ready"
+    ],
+    "state": "open",
+    "comments": 2,
+    "created_at": "2016-04-05T13:43:37Z",
+    "updated_at": "2016-04-05T13:45:14Z",
+    "body": "It shows zero stories in progress, but there is one!\n\nAny idea @GabLeRoux"
+   },
+   "comment": {
+    "id": 205811718,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-05T13:45:14Z",
+    "updated_at": "2016-04-05T13:45:14Z",
+    "body": "Lookign..."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T13:45:14Z"
+ },
+ {
+  "id": "3848267414",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145993229,
+    "number": 24,
+    "title": "Waffle badge broken?",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-05T13:43:37Z",
+    "updated_at": "2016-04-05T13:43:37Z",
+    "body": "It shows zero stories in progress, but there is one!\n\nAny idea @GabLeRoux"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T13:43:37Z"
+ },
+ {
+  "id": "3848052079",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145968731,
+    "number": 22,
+    "title": "Add a Deploy to Heroku button",
+    "labels": [],
+    "state": "closed",
+    "comments": 1,
+    "created_at": "2016-04-05T12:10:27Z",
+    "updated_at": "2016-04-05T12:58:27Z",
+    "closed_at": "2016-04-05T12:58:27Z",
+    "body": "Never done this before, but I think it does break some walls and make it easy for new developers to see what the project is and what's the current state of the app.\n\nhttps://github.com/heroku/button-sample"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T12:58:29Z"
+ },
+ {
+  "id": "3848051989",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145968731,
+    "number": 22,
+    "title": "Add a Deploy to Heroku button",
+    "user": {
+     "login": "GabLeRoux",
+     "id": 1264761,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 1,
+    "created_at": "2016-04-05T12:10:27Z",
+    "updated_at": "2016-04-05T12:58:27Z",
+    "closed_at": "2016-04-05T12:58:27Z",
+    "body": "Never done this before, but I think it does break some walls and make it easy for new developers to see what the project is and what's the current state of the app.\n\nhttps://github.com/heroku/button-sample"
+   },
+   "comment": {
+    "id": 205790580,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-05T12:58:26Z",
+    "updated_at": "2016-04-05T12:58:26Z",
+    "body": "Duplicate of #19. it's really easy, we just need to add a `app.json` and the button itself in the README. I just need to spend a few minutes on it, probably this week, if no one else did it until then."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T12:58:28Z"
+ },
+ {
+  "id": "3848046726",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1051882660,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "lebreton.gabriel@gmail.com",
+      "name": "Gabriel Le Breton"
+     },
+     {
+      "ec4cb7265cc51fb00ef3bfb4b14104915b8fd535": "waffle.io badge closes #21",
+      "9fa8e85101182dbdfaddbdbd0fa5d621d8b207f4": "Added some links"
+     }
+    ],
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "aebc6b77014ef5fd0a6e6bf55116e5846edf2f64": "Merge pull request #23 from GabLeRoux/master\n\nclose #21 and readme update"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-05T12:57:16Z"
+ },
+ {
+  "id": "3848046708",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145968499,
+    "number": 21,
+    "title": "Add waffle.io badge",
+    "labels": [],
+    "state": "closed",
+    "created_at": "2016-04-05T12:09:09Z",
+    "updated_at": "2016-04-05T12:57:15Z",
+    "closed_at": "2016-04-05T12:57:15Z",
+    "body": "badges, badges everywhere :)"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T12:57:16Z"
+ },
+ {
+  "id": "3848046697",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 23,
+   "pull_request": {
+    "id": 65295297,
+    "state": "closed",
+    "title": "close #21 and readme update",
+    "body": "yay :)",
+    "created_at": "2016-04-05T12:24:20Z",
+    "updated_at": "2016-04-05T12:57:15Z",
+    "closed_at": "2016-04-05T12:57:15Z",
+    "merged_at": "2016-04-05T12:57:15Z",
+    "merge_commit_sha": "aebc6b77014ef5fd0a6e6bf55116e5846edf2f64",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "comments": 1,
+    "commits": 2,
+    "additions": 18,
+    "deletions": 8,
+    "changed_files": 1
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T12:57:15Z"
+ },
+ {
+  "id": "3848046507",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145972078,
+    "number": 23,
+    "title": "close #21 and readme update",
+    "user": {
+     "login": "GabLeRoux",
+     "id": 1264761,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-04-05T12:24:20Z",
+    "updated_at": "2016-04-05T12:57:13Z",
+    "pull_request": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/pulls/23",
+     "html_url": "https://github.com/jipiboily/forwardlytics/pull/23",
+     "diff_url": "https://github.com/jipiboily/forwardlytics/pull/23.diff",
+     "patch_url": "https://github.com/jipiboily/forwardlytics/pull/23.patch"
+    },
+    "body": "yay :)"
+   },
+   "comment": {
+    "id": 205789976,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-05T12:57:13Z",
+    "updated_at": "2016-04-05T12:57:13Z",
+    "body": "Thanks @GabLeRoux :grinning: "
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-05T12:57:13Z"
+ },
+ {
+  "id": "3844809144",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145221284,
+    "number": 3,
+    "title": "add tests for the integration system, and everything",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "in progress"
+    ],
+    "state": "open",
+    "assignee": {
+     "login": "jipiboily",
+     "id": 232993,
+     "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/jipiboily",
+     "html_url": "https://github.com/jipiboily",
+     "followers_url": "https://api.github.com/users/jipiboily/followers",
+     "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+     "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+     "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+     "repos_url": "https://api.github.com/users/jipiboily/repos",
+     "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+     "type": "User",
+     "site_admin": false
+    },
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 7,
+     "closed_issues": 4,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-03T23:42:53Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 1,
+    "created_at": "2016-04-01T16:13:51Z",
+    "updated_at": "2016-04-04T19:56:16Z",
+    "body": "add tests for the plugin system, and everything else (why not before? This is a PoC, not sure the structure of the project and data will stay the same yet)"
+   },
+   "comment": {
+    "id": 205468903,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-04T19:56:16Z",
+    "updated_at": "2016-04-04T19:56:16Z",
+    "body": "See if I can learn anything from http://elithrar.github.io/article/testing-http-handlers-go/?utm_source=golangweekly&utm_medium=email"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-04T19:56:16Z"
+ },
+ {
+  "id": "3844581328",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 20,
+   "pull_request": {
+    "id": 65195666,
+    "state": "closed",
+    "title": "Code clean up",
+    "body": "After reading your code for a while, I think I could find some improvements.\r\n\r\nI'm pretty sure everyone agrees with me on these changes. Right?",
+    "created_at": "2016-04-04T19:02:05Z",
+    "updated_at": "2016-04-04T19:05:43Z",
+    "closed_at": "2016-04-04T19:05:43Z",
+    "merge_commit_sha": "1ca2407979babbd8259bee1c7dfea6f24b082698",
+    "mergeable": true,
+    "mergeable_state": "unstable",
+    "comments": 1,
+    "commits": 1,
+    "additions": 16,
+    "deletions": 16,
+    "changed_files": 9,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-04T19:05:43Z"
+ },
+ {
+  "id": "3844581322",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145774967,
+    "number": 20,
+    "title": "Code clean up",
+    "user": {
+     "login": "Pacane",
+     "id": 2762440,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 1,
+    "created_at": "2016-04-04T19:02:05Z",
+    "updated_at": "2016-04-04T19:05:43Z",
+    "closed_at": "2016-04-04T19:05:43Z",
+    "pull_request": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/pulls/20",
+     "html_url": "https://github.com/jipiboily/forwardlytics/pull/20",
+     "diff_url": "https://github.com/jipiboily/forwardlytics/pull/20.diff",
+     "patch_url": "https://github.com/jipiboily/forwardlytics/pull/20.patch"
+    },
+    "body": "After reading your code for a while, I think I could find some improvements.\r\n\r\nI'm pretty sure everyone agrees with me on these changes. Right?"
+   },
+   "comment": {
+    "id": 205450440,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-04T19:05:43Z",
+    "updated_at": "2016-04-04T19:05:43Z",
+    "body": "Ah...ah...ah... :P\r\n\r\nFor anyone coming here, I presented that project at a local meetup. I am French Canadian (as everyone is at that meetup). I thought that \"dix-patch\" would be a good name, as in french it would be pronounced \"dispatch\"...but as you can imagine, someone in the assistance made me realize how it would be pronounced in English...\r\n\r\nWe laughed very hard at my first slide (a 5 minute prep slide deck), as it's the worst slide ever, for various reasons, including the name.\r\n\r\nWon't merge buddy, but...thanks....?!? :stuck_out_tongue: "
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-04T19:05:43Z"
+ },
+ {
+  "id": "3840809116",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049304822,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "30773efa482c5755de19693af39997de08817bfd": "add a note to the README"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:45:00Z"
+ },
+ {
+  "id": "3840806839",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/add-support-for-heroku",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:42:55Z"
+ },
+ {
+  "id": "3840806800",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049303856,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "d92ac0822ec3846c65e1601e657267888824eaf0": "make the port configurable",
+      "51f2f2e052827d24af7398e92c8a08828205d6a0": "add Procfile",
+      "69627c3f304a6b950f3e1f71fc2362af672d2e10": "add note about Heroku deployment",
+      "f17aca5b23591b25c2650594f6b065faf2a0a28c": "Merge pull request #18 from jipiboily/feature/add-support-for-heroku\n\nadd support for heroku"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:42:54Z"
+ },
+ {
+  "id": "3840806794",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 18,
+   "pull_request": {
+    "id": 65084793,
+    "state": "closed",
+    "title": "add support for heroku",
+    "body": "Closes #15",
+    "created_at": "2016-04-03T23:40:09Z",
+    "updated_at": "2016-04-03T23:42:53Z",
+    "closed_at": "2016-04-03T23:42:53Z",
+    "merged_at": "2016-04-03T23:42:53Z",
+    "merge_commit_sha": "f17aca5b23591b25c2650594f6b065faf2a0a28c",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 3,
+    "additions": 8,
+    "deletions": 5,
+    "changed_files": 3
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:42:53Z"
+ },
+ {
+  "id": "3840806792",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145517671,
+    "number": 15,
+    "title": "Tiddy up deploy (for Heroku)",
+    "labels": [
+     "in progress"
+    ],
+    "state": "closed",
+    "created_at": "2016-04-03T16:50:38Z",
+    "updated_at": "2016-04-03T23:42:53Z",
+    "closed_at": "2016-04-03T23:42:53Z",
+    "body": "This mostly means making sure this can be deployed on Heroku."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:42:53Z"
+ },
+ {
+  "id": "3840806609",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049303772,
+   "ref": "refs/heads/feature/add-support-for-heroku",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "69627c3f304a6b950f3e1f71fc2362af672d2e10": "add note about Heroku deployment"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:42:44Z"
+ },
+ {
+  "id": "3840804656",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145553105,
+    "number": 19,
+    "title": "Add a Deploy to Heroku button",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-03T23:40:52Z",
+    "updated_at": "2016-04-03T23:40:52Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:40:52Z"
+ },
+ {
+  "id": "3840803772",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 18,
+   "pull_request": {
+    "id": 65084793,
+    "state": "open",
+    "title": "add support for heroku",
+    "created_at": "2016-04-03T23:40:09Z",
+    "updated_at": "2016-04-03T23:40:09Z",
+    "merge_commit_sha": "72ef9fbbfc32bf6177d9ab7f3cc4fde0f90cb787",
+    "mergeable": true,
+    "mergeable_state": "unstable",
+    "commits": 2,
+    "additions": 7,
+    "deletions": 2,
+    "changed_files": 2,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:40:09Z"
+ },
+ {
+  "id": "3840803583",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/add-support-for-heroku",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-03T23:40:02Z"
+ },
+ {
+  "id": "3840301189",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049085296,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "a6ef6a294de053350bd9b870a347bf513b33171f": "add Godep support"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:20:26Z"
+ },
+ {
+  "id": "3840294497",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/add-travis",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:15:09Z"
+ },
+ {
+  "id": "3840294457",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049082244,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "cfc9fb90bfef73e98c4efeeea8dd751cfc30857b": "add .travis.yml",
+      "34f30bd1cd1a3cc240c83df542c5e8464d84ea42": "add Travis badge",
+      "c97f399cefca5c16269f5725465c8f861ffa3756": "use proper Intercom import",
+      "dbb3ee394e8e3c17b6b9119b9e829b3d1cecd993": "Merge pull request #17 from jipiboily/feature/add-travis\n\nadd .travis.yml"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:15:08Z"
+ },
+ {
+  "id": "3840294435",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 17,
+   "pull_request": {
+    "id": 65073900,
+    "state": "closed",
+    "title": "add .travis.yml",
+    "body": "Closes #16 ",
+    "created_at": "2016-04-03T17:03:07Z",
+    "updated_at": "2016-04-03T17:15:07Z",
+    "closed_at": "2016-04-03T17:15:07Z",
+    "merged_at": "2016-04-03T17:15:07Z",
+    "merge_commit_sha": "dbb3ee394e8e3c17b6b9119b9e829b3d1cecd993",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 3,
+    "additions": 12,
+    "deletions": 4,
+    "changed_files": 4
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:15:07Z"
+ },
+ {
+  "id": "3840294434",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145517731,
+    "number": 16,
+    "title": "Setup Travis CI",
+    "labels": [
+     "in progress"
+    ],
+    "state": "closed",
+    "created_at": "2016-04-03T16:51:44Z",
+    "updated_at": "2016-04-03T17:15:07Z",
+    "closed_at": "2016-04-03T17:15:07Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:15:07Z"
+ },
+ {
+  "id": "3840290711",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049080675,
+   "ref": "refs/heads/feature/add-travis",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "34f30bd1cd1a3cc240c83df542c5e8464d84ea42": "add Travis badge",
+      "c97f399cefca5c16269f5725465c8f861ffa3756": "use proper Intercom import"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:12:17Z"
+ },
+ {
+  "id": "3840279044",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 17,
+   "pull_request": {
+    "id": 65073900,
+    "state": "open",
+    "title": "add .travis.yml",
+    "created_at": "2016-04-03T17:03:07Z",
+    "updated_at": "2016-04-03T17:03:07Z",
+    "merge_commit_sha": "f6e7cb32d51a588a2a61a52d58d5e31af858c450",
+    "mergeable": true,
+    "mergeable_state": "unstable",
+    "commits": 1,
+    "additions": 5,
+    "changed_files": 1,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:03:08Z"
+ },
+ {
+  "id": "3840279002",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/add-travis",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-03T17:03:06Z"
+ },
+ {
+  "id": "3840272324",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049072770,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "a8fd785c77571292205ed86ac959db75876019e5": "fix typos in comments"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:58:19Z"
+ },
+ {
+  "id": "3840263748",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145517731,
+    "number": 16,
+    "title": "Setup Travis CI",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-03T16:51:44Z",
+    "updated_at": "2016-04-03T16:51:44Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:51:44Z"
+ },
+ {
+  "id": "3840262270",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145517671,
+    "number": 15,
+    "title": "Tiddy up deploy (for Heroku)",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-03T16:50:38Z",
+    "updated_at": "2016-04-03T16:50:38Z",
+    "body": "This mostly means making sure this can be deployed on Heroku."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:50:39Z"
+ },
+ {
+  "id": "3840247808",
+  "type": "DeleteEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/intercom",
+   "ref_type": "branch",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:39:42Z"
+ },
+ {
+  "id": "3840247773",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1049062165,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "172ba997a8fc31e221b3c63a061f270aed1591f2": "Add the Intercom integration\n\nCloses #2",
+      "13338e21b33fcc19b7861de828ba3f9942c06517": "Merge pull request #14 from jipiboily/feature/intercom\n\nAdd the Intercom integration"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:39:40Z"
+ },
+ {
+  "id": "3840247767",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 14,
+   "pull_request": {
+    "id": 65047417,
+    "state": "closed",
+    "title": "Add the Intercom integration",
+    "body": "Closes #2",
+    "created_at": "2016-04-02T19:22:15Z",
+    "updated_at": "2016-04-03T16:39:40Z",
+    "closed_at": "2016-04-03T16:39:40Z",
+    "merged_at": "2016-04-03T16:39:40Z",
+    "merge_commit_sha": "13338e21b33fcc19b7861de828ba3f9942c06517",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 1,
+    "additions": 198,
+    "deletions": 8,
+    "changed_files": 3
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:39:40Z"
+ },
+ {
+  "id": "3840247766",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145220827,
+    "number": 2,
+    "title": "Implement the Intercom integration",
+    "labels": [
+     "in progress"
+    ],
+    "state": "closed",
+    "comments": 1,
+    "created_at": "2016-04-01T16:11:55Z",
+    "updated_at": "2016-04-03T16:39:40Z",
+    "closed_at": "2016-04-03T16:39:40Z",
+    "body": "- [x] support new users\n- [x] support already existing user\n- [x] tested"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-03T16:39:40Z"
+ },
+ {
+  "id": "3838968219",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1048511530,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "af1396231402ea748c8db692eab32e4ecb418cca": "add a README for the integration folder"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-02T19:28:56Z"
+ },
+ {
+  "id": "3838961590",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145221639,
+    "number": 7,
+    "title": "document how to add an integration",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "state": "open",
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 8,
+     "closed_issues": 1,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-01T17:59:55Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 1,
+    "created_at": "2016-04-01T16:15:30Z",
+    "updated_at": "2016-04-02T19:23:14Z"
+   },
+   "comment": {
+    "id": 204784946,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-02T19:23:13Z",
+    "updated_at": "2016-04-02T19:23:13Z",
+    "body": "See the README in the integrations folder."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-02T19:23:14Z"
+ },
+ {
+  "id": "3838960504",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "number": 14,
+   "pull_request": {
+    "id": 65047417,
+    "state": "open",
+    "title": "Add the Intercom integration",
+    "body": "Closes #2",
+    "created_at": "2016-04-02T19:22:15Z",
+    "updated_at": "2016-04-02T19:22:15Z",
+    "mergeable_state": "unknown",
+    "commits": 1,
+    "additions": 198,
+    "deletions": 8,
+    "changed_files": 3,
+    "merged_by": {}
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-02T19:22:15Z"
+ },
+ {
+  "id": "3838960499",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1048508062,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "fdb36f7bee55804546ca23258ba47aaaaaaea83d": "implement basic version of the Intercom integration",
+      "181046bc0b404592e3aea5211823caa793f9e73f": "add some error handling"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-02T19:22:15Z"
+ },
+ {
+  "id": "3838960330",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "feature/intercom",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "Takes event in and forwards them to various providers, mostly analytics providers.",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-02T19:22:06Z"
+ },
+ {
+  "id": "3837695108",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145311769,
+    "number": 13,
+    "title": "Add error logging in Bugsnag (or equivalent)",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T23:52:36Z",
+    "updated_at": "2016-04-01T23:52:36Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T23:52:37Z"
+ },
+ {
+  "id": "3837623272",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145307911,
+    "number": 12,
+    "title": "Add support for companies",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T23:20:53Z",
+    "updated_at": "2016-04-01T23:20:53Z",
+    "body": "Currently only supports user level."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T23:20:53Z"
+ },
+ {
+  "id": "3836573327",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145220827,
+    "number": 2,
+    "title": "Implement the Intercom integration",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "in progress"
+    ],
+    "state": "open",
+    "assignee": {
+     "login": "jipiboily",
+     "id": 232993,
+     "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/jipiboily",
+     "html_url": "https://github.com/jipiboily",
+     "followers_url": "https://api.github.com/users/jipiboily/followers",
+     "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+     "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+     "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+     "repos_url": "https://api.github.com/users/jipiboily/repos",
+     "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+     "type": "User",
+     "site_admin": false
+    },
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 8,
+     "closed_issues": 1,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-01T17:59:55Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 1,
+    "created_at": "2016-04-01T16:11:55Z",
+    "updated_at": "2016-04-01T18:31:41Z"
+   },
+   "comment": {
+    "id": 204504526,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-01T18:31:41Z",
+    "updated_at": "2016-04-01T18:31:41Z",
+    "body": "I started the work on it, shouldn't be _too_ long to do. If had plenty of free time it would be done today. Realisticly, maybe in the next week? :)"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T18:31:41Z"
+ },
+ {
+  "id": "3836465161",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047575473,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "e7e01d1723e77a44869c826ffb18cce7cb344775": "add receivedAt value"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T18:07:11Z"
+ },
+ {
+  "id": "3836451607",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047571065,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "d947ddc17b731fd4bf6c046c432b3273237dc0f0": "add \"Why?\" section in README"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T18:04:05Z"
+ },
+ {
+  "id": "3836432741",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 145220702,
+    "number": 1,
+    "title": "define and document the API structure",
+    "labels": [],
+    "state": "closed",
+    "comments": 5,
+    "created_at": "2016-04-01T16:11:22Z",
+    "updated_at": "2016-04-01T17:59:56Z",
+    "closed_at": "2016-04-01T17:59:55Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:59:56Z"
+ },
+ {
+  "id": "3836432414",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145220702,
+    "number": 1,
+    "title": "define and document the API structure",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "in progress"
+    ],
+    "state": "open",
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 9,
+     "closed_issues": 0,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-01T16:52:02Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 5,
+    "created_at": "2016-04-01T16:11:22Z",
+    "updated_at": "2016-04-01T17:59:52Z"
+   },
+   "comment": {
+    "id": 204492970,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-01T17:59:52Z",
+    "updated_at": "2016-04-01T17:59:52Z",
+    "body": "Now documented lightly in the README and the code."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:59:53Z"
+ },
+ {
+  "id": "3836393484",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047552006,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "234e4999723eec6018e131b5ab3e4a16930b9104": "remove a validation\n\nThis should NOT be set, and will be overwritten anyway.",
+      "5c2795299167e128cc7ecf6866bf5d2ea796a367": "add some doc about the API"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:51:07Z"
+ },
+ {
+  "id": "3836364723",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047542434,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "ec18987435f8b51ac84b49423ed531e5223390ec": "change code to fit the defined API structure",
+      "a5ebadf25b95137b0aedcd9de94cbdd7f8a01407": "add event validation for API"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:44:34Z"
+ },
+ {
+  "id": "3836279883",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145220702,
+    "number": 1,
+    "title": "define and document the API structure",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "in progress"
+    ],
+    "state": "open",
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 9,
+     "closed_issues": 0,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-01T16:52:02Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 4,
+    "created_at": "2016-04-01T16:11:22Z",
+    "updated_at": "2016-04-01T17:24:14Z"
+   },
+   "comment": {
+    "id": 204478279,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-01T17:24:14Z",
+    "updated_at": "2016-04-01T17:24:14Z",
+    "body": "That being said, the context won't be there to start with, as it is more appropriate for frontend libraries."
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:24:15Z"
+ },
+ {
+  "id": "3836220589",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145220702,
+    "number": 1,
+    "title": "define and document the API structure",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "in progress"
+    ],
+    "state": "open",
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 9,
+     "closed_issues": 0,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-01T16:52:02Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 3,
+    "created_at": "2016-04-01T16:11:22Z",
+    "updated_at": "2016-04-01T17:09:42Z"
+   },
+   "comment": {
+    "id": 204474026,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-01T17:09:42Z",
+    "updated_at": "2016-04-01T17:09:42Z",
+    "body": "At first, I think...\n\nWhat we take from the API:\n\n```\n{\n  context: {}, // optionnal, but can have IP of the user, user agent, version of the library used, etc\n  timestamp: 123, // when the event triggered\n  userID: 'some-user-id',\n  userTraits: {} // User traits, most are custom. Some are required, per integration\n}\n```\n\nWhat we send to the integrations:\n\n```\n{\n  context: {}, // optionnal, but can have IP of the user, user agent, version of the library used, etc\n  timestamp: 123, // when the event triggered\n  userID: 'some-user-id',\n  receivedAt: 123, // when Forwardlytics received the event\n  userTraits: {} // User traits, most are custom. Some are required, per integration\n}\n```"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:09:49Z"
+ },
+ {
+  "id": "3836186333",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 145220702,
+    "number": 1,
+    "title": "define and document the API structure",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "labels": [
+     "ready"
+    ],
+    "state": "open",
+    "milestone": {
+     "url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1",
+     "html_url": "https://github.com/jipiboily/forwardlytics/milestones/0.1%20-%20Ready%20to%20try%20on%20small%20apps",
+     "labels_url": "https://api.github.com/repos/jipiboily/forwardlytics/milestones/1/labels",
+     "id": 1678059,
+     "number": 1,
+     "title": "0.1 - Ready to try on small apps",
+     "description": "Very first version can support only identification of users, and send them to Intercom and Mixpanel only. Next step would be tracking events in the backend. Everything front-end related is for later.\r\n\r\nFor now, Forwardlytics supports only one project at a time. The configuration is all in environment variables, no database or anything.",
+     "creator": {
+      "login": "jipiboily",
+      "id": 232993,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232993?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jipiboily",
+      "html_url": "https://github.com/jipiboily",
+      "followers_url": "https://api.github.com/users/jipiboily/followers",
+      "following_url": "https://api.github.com/users/jipiboily/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jipiboily/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jipiboily/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jipiboily/subscriptions",
+      "organizations_url": "https://api.github.com/users/jipiboily/orgs",
+      "repos_url": "https://api.github.com/users/jipiboily/repos",
+      "events_url": "https://api.github.com/users/jipiboily/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jipiboily/received_events",
+      "type": "User",
+      "site_admin": false
+     },
+     "open_issues": 9,
+     "closed_issues": 0,
+     "state": "open",
+     "created_at": "2016-04-01T13:43:16Z",
+     "updated_at": "2016-04-01T16:52:02Z",
+     "due_on": null,
+     "closed_at": null
+    },
+    "comments": 2,
+    "created_at": "2016-04-01T16:11:22Z",
+    "updated_at": "2016-04-01T17:01:16Z"
+   },
+   "comment": {
+    "id": 204471760,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-04-01T17:01:16Z",
+    "updated_at": "2016-04-01T17:01:16Z",
+    "body": "For now, probably just something in the README, as it might change a lot before 0.1, and before 1.0...and possibly Apiary + Blueprint. At least, that's what I had in mind. I'll look at RAML though.\r\n\r\nThanks!"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T17:01:16Z"
+ },
+ {
+  "id": "3836164201",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047474128,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "50827ab0ccbe5cdad391f6be14d40b4220466def": "clean README of todos and notes for the future"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:55:53Z"
+ },
+ {
+  "id": "3836157311",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145230106,
+    "number": 11,
+    "title": "add Keen.io integration",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:54:09Z",
+    "updated_at": "2016-04-01T16:54:09Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:54:09Z"
+ },
+ {
+  "id": "3836156673",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145230087,
+    "number": 10,
+    "title": "add Drip integration",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:54:00Z",
+    "updated_at": "2016-04-01T16:54:00Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:54:00Z"
+ },
+ {
+  "id": "3835997714",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145222092,
+    "number": 9,
+    "title": "make it robust enough to use in small apps, that are not too critical to start with",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:17:33Z",
+    "updated_at": "2016-04-01T16:17:33Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:17:34Z"
+ },
+ {
+  "id": "3835994247",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145221874,
+    "number": 8,
+    "title": "implement the Ruby SDK",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:16:45Z",
+    "updated_at": "2016-04-01T16:16:45Z",
+    "body": "implement the Ruby SDK (https://github.com/jipiboily/forwardlytics-ruby)"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:16:45Z"
+ },
+ {
+  "id": "3835988718",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145221639,
+    "number": 7,
+    "title": "document how to add an integration",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:15:30Z",
+    "updated_at": "2016-04-01T16:15:30Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:15:30Z"
+ },
+ {
+  "id": "3835986224",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145221510,
+    "number": 6,
+    "title": "add Track to track events in integrations",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:14:57Z",
+    "updated_at": "2016-04-01T16:14:57Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:14:57Z"
+ },
+ {
+  "id": "3835984804",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145221446,
+    "number": 5,
+    "title": "move the API key validation in a middleware",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:14:36Z",
+    "updated_at": "2016-04-01T16:14:36Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:14:36Z"
+ },
+ {
+  "id": "3835983351",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145221379,
+    "number": 4,
+    "title": "  implement the Mixpanel integration",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:14:16Z",
+    "updated_at": "2016-04-01T16:14:16Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:14:16Z"
+ },
+ {
+  "id": "3835981541",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145221284,
+    "number": 3,
+    "title": "add tests for the integration system, and everything",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:13:51Z",
+    "updated_at": "2016-04-01T16:13:51Z",
+    "body": "add tests for the plugin system, and everything else (why not before? This is a PoC, not sure the structure of the project and data will stay the same yet)"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:13:51Z"
+ },
+ {
+  "id": "3835973188",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145220827,
+    "number": 2,
+    "title": "implement the Intercom integration",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:11:55Z",
+    "updated_at": "2016-04-01T16:11:55Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:11:55Z"
+ },
+ {
+  "id": "3835970738",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 145220702,
+    "number": 1,
+    "title": " define and document the API structure",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-04-01T16:11:22Z",
+    "updated_at": "2016-04-01T16:11:22Z"
+   }
+  },
+  "public": true,
+  "created_at": "2016-04-01T16:11:22Z"
+ },
+ {
+  "id": "3835244756",
+  "type": "WatchEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "action": "started"
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:38:38Z"
+ },
+ {
+  "id": "3835178844",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047127794,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "07092281e63bec35cc4fe14f4b408188fd186d78": "add Code Climate badge"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:22:55Z"
+ },
+ {
+  "id": "3835163247",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047121964,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "4f68282c7fec37ffd6eafe9a1941244b9ce03af8": "add some TODOs to the README"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:18:59Z"
+ },
+ {
+  "id": "3835151267",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047117516,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "1b85fe0876246d59104b2d757bbc0a505802afd5": "fix README styling"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:15:58Z"
+ },
+ {
+  "id": "3835133189",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "push_id": 1047110876,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "47acae6d3c8da117a59c43c1189b1cb10367f82f": "initial commit"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:11:28Z"
+ },
+ {
+  "id": "3835118434",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55233110,
+   "name": "jipiboily/forwardlytics-ruby"
+  },
+  "payload": {
+   "ref": "master",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:07:50Z"
+ },
+ {
+  "id": "3835118355",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55233110,
+   "name": "jipiboily/forwardlytics-ruby"
+  },
+  "payload": {
+   "ref": null,
+   "ref_type": "repository",
+   "master_branch": "master",
+   "description": "",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-01T13:07:49Z"
+ },
+ {
+  "id": "3834970700",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": "master",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-01T12:28:35Z"
+ },
+ {
+  "id": "3834970650",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55230917,
+   "name": "jipiboily/forwardlytics"
+  },
+  "payload": {
+   "ref": null,
+   "ref_type": "repository",
+   "master_branch": "master",
+   "description": "",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-04-01T12:28:34Z"
+ },
+ {
+  "id": "3832825400",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 57671072,
+    "number": 248,
+    "title": "Make QC a bit thread safe",
+    "user": {
+     "login": "smathieu",
+     "id": 148622,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 7,
+    "created_at": "2015-02-14T00:10:33Z",
+    "updated_at": "2016-03-31T23:11:37Z",
+    "closed_at": "2015-02-17T19:28:14Z",
+    "pull_request": {
+     "url": "https://api.github.com/repos/QueueClassic/queue_classic/pulls/248",
+     "html_url": "https://github.com/QueueClassic/queue_classic/pull/248",
+     "diff_url": "https://github.com/QueueClassic/queue_classic/pull/248.diff",
+     "patch_url": "https://github.com/QueueClassic/queue_classic/pull/248.patch"
+    },
+    "body": "Related to #247.\n\nUse thread local storage to save the configuration of the connection. This *DOES NOT* make QC fully thread safe. For instance, the default queue is stored globally. It's however unlikely that someone is using a different default queue per thread."
+   },
+   "comment": {
+    "id": 204166646,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-31T23:11:36Z",
+    "updated_at": "2016-03-31T23:11:36Z",
+    "body": "@malclocke just FYI, this does NOT make QC thread safe, it improves the situation, but does NOT fix it. I don't think QC is threadsafe at this point."
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-31T23:11:37Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3831313513",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55169345,
+   "name": "jipiboily/saas-club-stack"
+  },
+  "payload": {
+   "push_id": 1045760935,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "88cc3092ad4d8aa0cac3aa17ff8588ca4f1f8b54": "add Metrics Watch's logo"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-03-31T17:26:05Z"
+ },
+ {
+  "id": "3831292642",
+  "type": "PushEvent",
+  "repo": {
+   "id": 55169345,
+   "name": "jipiboily/saas-club-stack"
+  },
+  "payload": {
+   "push_id": 1045754163,
+   "ref": "refs/heads/master",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "ea1b34f6a0ece6a315ced9c909a3e15474341edf": "Create README.md"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-03-31T17:21:40Z"
+ },
+ {
+  "id": "3831284152",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55169345,
+   "name": "jipiboily/saas-club-stack"
+  },
+  "payload": {
+   "ref": "master",
+   "ref_type": "branch",
+   "master_branch": "master",
+   "description": "SaaS club stack",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-03-31T17:19:52Z"
+ },
+ {
+  "id": "3831283770",
+  "type": "CreateEvent",
+  "repo": {
+   "id": 55169345,
+   "name": "jipiboily/saas-club-stack"
+  },
+  "payload": {
+   "ref": null,
+   "ref_type": "repository",
+   "master_branch": "master",
+   "description": "SaaS club stack",
+   "pusher_type": "user"
+  },
+  "public": true,
+  "created_at": "2016-03-31T17:19:46Z"
+ },
+ {
+  "id": "3819957640",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 52598117,
+   "name": "pyupio/statuspage"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 143718600,
+    "number": 31,
+    "title": "Email notifications?",
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 2,
+    "created_at": "2016-03-26T15:25:05Z",
+    "updated_at": "2016-03-29T15:27:39Z",
+    "body": "Hey,\r\nlove what you did! I'm not using it yet but plan on doing it very soon. One thing that is missing IMHO is the ability to subscribe via email to the status updates. I know this is hosted on GitHub pages, so this is a bit tricky. Here is an idea I had. It's a bit hacky, I must admit, and totally incomplete.\r\n\r\n- Have an RSS feed of the incidents\r\n- Have a MailChimp account, or something similar, and integrate it with statuspage\r\n- Have _something_ that sends email for new RSS entries\r\n\r\nI looked at the MailChimp \"RSS to email\" feature, but it's not fast enough, it would be a day late, that's useless. It doesn't look like it's possible with IFTTT or Zapier, but I might have missed something.\r\n\r\nIt would be easy to host a service doing that, but I would prefer not to have to host an app to do that, but have something easy.\r\n\r\nMaybe there is nothing that fits the vision you have, but I thought I would share my thoughts and maybe someone can complete those and we can come up with a decent solution :)\r\n\r\nCheers"
+   },
+   "comment": {
+    "id": 202953308,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-29T15:27:39Z",
+    "updated_at": "2016-03-29T15:27:39Z",
+    "body": "Yeah, same. I actually started to write thinking that MailChimp would work, but before sending it, I double checked, and the fact it is not in near real-time is a killer, and totally agree this should be mad simple to setup and use. Feel free to close in the meantime."
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-29T15:27:39Z",
+  "org": {
+   "id": 16113910,
+   "login": "pyupio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/pyupio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/16113910?"
+  }
+ },
+ {
+  "id": "3811058618",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 52598117,
+   "name": "pyupio/statuspage"
+  },
+  "payload": {
+   "action": "opened",
+   "issue": {
+    "id": 143718600,
+    "number": 31,
+    "title": "Email notifications?",
+    "labels": [],
+    "state": "open",
+    "created_at": "2016-03-26T15:25:05Z",
+    "updated_at": "2016-03-26T15:25:05Z",
+    "body": "Hey,\r\nlove what you did! I'm not using it yet but plan on doing it very soon. One thing that is missing IMHO is the ability to subscribe via email to the status updates. I know this is hosted on GitHub pages, so this is a bit tricky. Here is an idea I had. It's a bit hacky, I must admit, and totally incomplete.\r\n\r\n- Have an RSS feed of the incidents\r\n- Have a MailChimp account, or something similar, and integrate it with statuspage\r\n- Have _something_ that sends email for new RSS entries\r\n\r\nI looked at the MailChimp \"RSS to email\" feature, but it's not fast enough, it would be a day late, that's useless. It doesn't look like it's possible with IFTTT or Zapier, but I might have missed something.\r\n\r\nIt would be easy to host a service doing that, but I would prefer not to have to host an app to do that, but have something easy.\r\n\r\nMaybe there is nothing that fits the vision you have, but I thought I would share my thoughts and maybe someone can complete those and we can come up with a decent solution :)\r\n\r\nCheers"
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-26T15:25:06Z",
+  "org": {
+   "id": 16113910,
+   "login": "pyupio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/pyupio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/16113910?"
+  }
+ },
+ {
+  "id": "3806354405",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 143340999,
+    "number": 285,
+    "title": "Disable Disqus comments",
+    "labels": [],
+    "state": "closed",
+    "comments": 2,
+    "created_at": "2016-03-24T19:44:52Z",
+    "updated_at": "2016-03-24T23:05:22Z",
+    "closed_at": "2016-03-24T23:05:21Z",
+    "body": "How do I disable Disqus comments entirely? Leaving the Disqus without configuration results in a javascript error:\r\n\r\n    GET http://.disqus.com/embed.js net::ERR_NAME_NOT_RESOLVED\r\n\r\n"
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-24T23:05:22Z"
+ },
+ {
+  "id": "3806354402",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 143340999,
+    "number": 285,
+    "title": "Disable Disqus comments",
+    "user": {
+     "login": "lioneljingles",
+     "id": 421186,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 2,
+    "created_at": "2016-03-24T19:44:52Z",
+    "updated_at": "2016-03-24T23:05:22Z",
+    "closed_at": "2016-03-24T23:05:21Z",
+    "body": "How do I disable Disqus comments entirely? Leaving the Disqus without configuration results in a javascript error:\r\n\r\n    GET http://.disqus.com/embed.js net::ERR_NAME_NOT_RESOLVED\r\n\r\n"
+   },
+   "comment": {
+    "id": 201066268,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-24T23:05:21Z",
+    "updated_at": "2016-03-24T23:05:21Z",
+    "body": "There are two, can't remember which one is which, but worst case overwrite both or look in the code to see which one is the one you want.\r\n\r\nhttps://github.com/jipiboily/monologue/blob/master/app/views/layouts/monologue/application/_disqus.html.erb\r\nhttps://github.com/jipiboily/monologue/blob/master/app/views/layouts/monologue/application/_disqus_embed.html.erb\r\n\r\nFeel free to reopen if it doesn't work, or send a PR adding an option for it."
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-24T23:05:22Z"
+ },
+ {
+  "id": "3806351367",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 143340999,
+    "number": 285,
+    "title": "Disable Disqus comments",
+    "user": {
+     "login": "lioneljingles",
+     "id": 421186,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-03-24T19:44:52Z",
+    "updated_at": "2016-03-24T23:04:28Z",
+    "body": "How do I disable Disqus comments entirely? Leaving the Disqus without configuration results in a javascript error:\r\n\r\n    GET http://.disqus.com/embed.js net::ERR_NAME_NOT_RESOLVED\r\n\r\n"
+   },
+   "comment": {
+    "id": 201066119,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-24T23:04:28Z",
+    "updated_at": "2016-03-24T23:04:28Z",
+    "body": "I don't think there is any option for that. You could overwrite the disqu partial, at the exact same path in your app, with an empty file."
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-24T23:04:28Z"
+ },
+ {
+  "id": "3790997128",
+  "type": "PushEvent",
+  "repo": {
+   "id": 43044491,
+   "name": "jipiboily/entreprendre.saglac.io"
+  },
+  "payload": {
+   "push_id": 1031095089,
+   "ref": "refs/heads/gh-pages",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "68332ee34767a2729a5d5cdc1e68a4e0b388e0aa": "change event for next date"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-03-21T23:57:41Z"
+ },
+ {
+  "id": "3769861903",
+  "type": "PushEvent",
+  "repo": {
+   "id": 14015739,
+   "name": "saglacio/saglac.io"
+  },
+  "payload": {
+   "push_id": 1023260806,
+   "ref": "refs/heads/gh-pages",
+   "commits": [
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "4f33163baa535fff8e551b628b5976a37563f057": "add \"welcome spring\" event"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-03-16T12:32:04Z",
+  "org": {
+   "id": 8966476,
+   "login": "saglacio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/saglacio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8966476?"
+  }
+ },
+ {
+  "id": "3767743459",
+  "type": "PushEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "push_id": 1022476442,
+   "ref": "refs/heads/3-1-stable",
+   "commits": [
+    [
+     {
+      "email": "malc@wholemeal.co.nz",
+      "name": "Malcolm Locke"
+     },
+     {
+      "4e6fa054dbe1e399f760896df11ed24561d156ee": "Use correct gem version specification in README"
+     }
+    ],
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "59c4e5f00df115ab19bdc53992c4ef1706ad76ad": "Merge pull request #278 from malclocke/use_correct_gem_version_in_readme\n\nUse correct gem version specification in README"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-03-15T23:53:32Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3767743432",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 278,
+   "pull_request": {
+    "id": 62987265,
+    "state": "closed",
+    "title": "Use correct gem version specification in README",
+    "body": "README on 3.1.x branch currently shows how to install 3.0.x.",
+    "created_at": "2016-03-15T22:26:21Z",
+    "updated_at": "2016-03-15T23:53:30Z",
+    "closed_at": "2016-03-15T23:53:30Z",
+    "merged_at": "2016-03-15T23:53:30Z",
+    "merge_commit_sha": "b7e48466fac9dc4cee72e46166f59800c0039c19",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "comments": 1,
+    "commits": 1,
+    "additions": 1,
+    "deletions": 1,
+    "changed_files": 1
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-15T23:53:32Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3767743256",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 1294210,
+   "name": "QueueClassic/queue_classic"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 141116796,
+    "number": 278,
+    "title": "Use correct gem version specification in README",
+    "user": {
+     "login": "malclocke",
+     "id": 169126,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-03-15T22:26:21Z",
+    "updated_at": "2016-03-15T23:53:27Z",
+    "pull_request": {
+     "url": "https://api.github.com/repos/QueueClassic/queue_classic/pulls/278",
+     "html_url": "https://github.com/QueueClassic/queue_classic/pull/278",
+     "diff_url": "https://github.com/QueueClassic/queue_classic/pull/278.diff",
+     "patch_url": "https://github.com/QueueClassic/queue_classic/pull/278.patch"
+    },
+    "body": "README on 3.1.x branch currently shows how to install 3.0.x."
+   },
+   "comment": {
+    "id": 197072132,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-15T23:53:27Z",
+    "updated_at": "2016-03-15T23:53:27Z",
+    "body": "Thanks!"
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-15T23:53:27Z",
+  "org": {
+   "id": 8517882,
+   "login": "QueueClassic",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/QueueClassic",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8517882?"
+  }
+ },
+ {
+  "id": "3762708237",
+  "type": "IssuesEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "closed",
+   "issue": {
+    "id": 137679572,
+    "number": 284,
+    "title": "Browse server on new post for images doesnt work",
+    "labels": [],
+    "state": "closed",
+    "comments": 7,
+    "created_at": "2016-03-01T20:36:36Z",
+    "updated_at": "2016-03-15T01:49:12Z",
+    "closed_at": "2016-03-15T01:49:12Z",
+    "body": "Hello there, im trying to use monologue on my new app and everything works perfectly minus the browse server thing. Every time i press the button it opens a popup with a 404 page (wich basically says that the page doesnt exist). \r\n\r\nIs there anything i have to configure for this to work? "
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-15T01:49:12Z"
+ },
+ {
+  "id": "3762708232",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 137679572,
+    "number": 284,
+    "title": "Browse server on new post for images doesnt work",
+    "user": {
+     "login": "morais17",
+     "id": 6803040,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 7,
+    "created_at": "2016-03-01T20:36:36Z",
+    "updated_at": "2016-03-15T01:49:12Z",
+    "closed_at": "2016-03-15T01:49:12Z",
+    "body": "Hello there, im trying to use monologue on my new app and everything works perfectly minus the browse server thing. Every time i press the button it opens a popup with a 404 page (wich basically says that the page doesnt exist). \r\n\r\nIs there anything i have to configure for this to work? "
+   },
+   "comment": {
+    "id": 196605359,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-15T01:49:12Z",
+    "updated_at": "2016-03-15T01:49:12Z",
+    "body": "So I guess this can be closed? Also, it was posted on the wrong project as I understand?\r\n\r\nFeel free top re-open if I'm wrong :)"
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-15T01:49:12Z"
+ },
+ {
+  "id": "3749618869",
+  "type": "PublicEvent",
+  "repo": {
+   "id": 14643128,
+   "name": "jipiboily/notedown"
+  },
+  "public": true,
+  "created_at": "2016-03-11T00:53:31Z"
+ },
+ {
+  "id": "3749617279",
+  "type": "PublicEvent",
+  "repo": {
+   "id": 15517011,
+   "name": "jipiboily/notedown.app"
+  },
+  "public": true,
+  "created_at": "2016-03-11T00:53:01Z"
+ },
+ {
+  "id": "3728588080",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 51777470,
+   "name": "ukd1/plusone"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 133790922,
+    "number": 1,
+    "title": "Test plus ones!",
+    "user": {
+     "login": "ukd1",
+     "id": 44345,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 16,
+    "created_at": "2016-02-15T18:51:56Z",
+    "updated_at": "2016-03-07T00:42:42Z",
+    "body": "Everyone loves plus ones. Note, this takes a minute or two to update due to caching.\r\n\r\n[![Issue #1](http://plusone-demo.herokuapp.com/count.svg?repo=ukd1/plusone&issue=1&sig=fcc82e36f38a2246df3732679c145b8061a282738d07192b22bda48b67114d04029cb2386f330f89639a2028c8fe021ef09985aa72a80b946589c8a1875e744e)](https://github.com/ukd1/plusone/issues/1)\r\n\r\nThis is a test badge. Plus fee free to try and +1 it!"
+   },
+   "comment": {
+    "id": 193024745,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-03-07T00:42:41Z",
+    "updated_at": "2016-03-07T00:42:41Z",
+    "body": "+1.5 ?"
+   }
+  },
+  "public": true,
+  "created_at": "2016-03-07T00:42:42Z"
+ },
+ {
+  "id": "3694363259",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3434202,
+   "name": "jipiboily/spree_multi_lingual"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 136275862,
+    "number": 50,
+    "title": "spree 2-4-stable compatible?",
+    "user": {
+     "login": "sybind",
+     "id": 2555181,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 1,
+    "created_at": "2016-02-25T04:16:46Z",
+    "updated_at": "2016-02-26T16:09:44Z",
+    "body": "I need something like this where I can have a unique translated title and description for each product. Is spree_multi_lingual the best thing available now for spree/solidus? I'm still on 2.4-stable."
+   },
+   "comment": {
+    "id": 189346043,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-02-26T16:09:44Z",
+    "updated_at": "2016-02-26T16:09:44Z",
+    "body": "I didn't work with Spree for years and years personally. I thought it was built-in starting at 2.0 though? Maybe ask on the Solidus or Spree Slack?\r\n\r\nThis is not really maintained anymore AFAIK."
+   }
+  },
+  "public": true,
+  "created_at": "2016-02-26T16:09:44Z"
+ },
+ {
+  "id": "3681388747",
+  "type": "PushEvent",
+  "repo": {
+   "id": 14015739,
+   "name": "saglacio/saglac.io"
+  },
+  "payload": {
+   "push_id": 990897378,
+   "ref": "refs/heads/gh-pages",
+   "commits": [
+    [
+     {
+      "email": "me@formix.org",
+      "name": "formix"
+     },
+     {
+      "bb2124d8b920004c8f5cb9a57d9d7ca401f3d029": "Added inference talk"
+     }
+    ],
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "a8ae2214555f4e987f0b7b01d8df526ac723d3b0": "Merge pull request #71 from formix/gh-pages\n\nAdded inference talk"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-02-24T02:55:17Z",
+  "org": {
+   "id": 8966476,
+   "login": "saglacio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/saglacio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8966476?"
+  }
+ },
+ {
+  "id": "3681388717",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 14015739,
+   "name": "saglacio/saglac.io"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 71,
+   "pull_request": {
+    "id": 60439633,
+    "state": "closed",
+    "title": "Added inference talk",
+    "created_at": "2016-02-24T01:07:18Z",
+    "updated_at": "2016-02-24T02:55:16Z",
+    "closed_at": "2016-02-24T02:55:16Z",
+    "merged_at": "2016-02-24T02:55:16Z",
+    "merge_commit_sha": "86c420a0151083905d7d88301b84a8b503686e82",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 1,
+    "additions": 3,
+    "deletions": 3,
+    "changed_files": 1
+   }
+  },
+  "public": true,
+  "created_at": "2016-02-24T02:55:16Z",
+  "org": {
+   "id": 8966476,
+   "login": "saglacio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/saglacio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8966476?"
+  }
+ },
+ {
+  "id": "3652582828",
+  "type": "PushEvent",
+  "repo": {
+   "id": 14015739,
+   "name": "saglacio/saglac.io"
+  },
+  "payload": {
+   "push_id": 980400968,
+   "ref": "refs/heads/gh-pages",
+   "commits": [
+    [
+     {
+      "email": "jellyka@gmail.com",
+      "name": "Jessica Lapointe"
+     },
+     {
+      "2ca176c2974c70ec5fcc8867e68284864c17d91f": "Add march event"
+     }
+    ],
+    [
+     {
+      "email": "j@jipi.ca",
+      "name": "Jean-Philippe Boily"
+     },
+     {
+      "c05278096b448fdc2225ddc0d3879f6a23f132e1": "Merge pull request #70 from jlap/patch-2\n\nAdd march event"
+     }
+    ]
+   ]
+  },
+  "public": true,
+  "created_at": "2016-02-17T01:15:32Z",
+  "org": {
+   "id": 8966476,
+   "login": "saglacio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/saglacio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8966476?"
+  }
+ },
+ {
+  "id": "3652582813",
+  "type": "PullRequestEvent",
+  "repo": {
+   "id": 14015739,
+   "name": "saglacio/saglac.io"
+  },
+  "payload": {
+   "action": "closed",
+   "number": 70,
+   "pull_request": {
+    "id": 59581979,
+    "state": "closed",
+    "title": "Add march event",
+    "created_at": "2016-02-17T01:12:33Z",
+    "updated_at": "2016-02-17T01:15:32Z",
+    "closed_at": "2016-02-17T01:15:32Z",
+    "merged_at": "2016-02-17T01:15:32Z",
+    "merge_commit_sha": "656d14a5856ea7fcf049f2cba1ee5d8dad92533e",
+    "merged": true,
+    "mergeable_state": "unknown",
+    "merged_by": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "commits": 1,
+    "additions": 13,
+    "changed_files": 1
+   }
+  },
+  "public": true,
+  "created_at": "2016-02-17T01:15:32Z",
+  "org": {
+   "id": 8966476,
+   "login": "saglacio",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/saglacio",
+   "avatar_url": "https://avatars.githubusercontent.com/u/8966476?"
+  }
+ },
+ {
+  "id": "3620624137",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 3345605,
+   "name": "jipiboily/monologue"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 132184796,
+    "number": 281,
+    "title": "Skip devise authenticate_user!",
+    "user": {
+     "login": "Pete-Tyldesley",
+     "id": 14144032,
+     "type": "User"
+    },
+    "state": "closed",
+    "comments": 3,
+    "created_at": "2016-02-08T16:13:08Z",
+    "updated_at": "2016-02-08T20:43:10Z",
+    "closed_at": "2016-02-08T16:43:54Z",
+    "body": "Hi, I'm using this gem with devise and loving it! Great work! Only trouble is I have it set up with devise, where I'm using the authenticate_user! method. I want the blog to be accessible to anyone, so is there a way for me to skip the before_action for the blog?"
+   },
+   "comment": {
+    "id": 181559306,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-02-08T20:43:10Z",
+    "updated_at": "2016-02-08T20:43:10Z",
+    "body": "My understanding is that he has Devise setup in the main app and don't want it to interfere with Monologue public pages...?"
+   }
+  },
+  "public": true,
+  "created_at": "2016-02-08T20:43:10Z"
+ },
+ {
+  "id": "3615293328",
+  "type": "IssueCommentEvent",
+  "repo": {
+   "id": 25315643,
+   "name": "nylas/N1"
+  },
+  "payload": {
+   "action": "created",
+   "issue": {
+    "id": 131839281,
+    "number": 1211,
+    "title": "Version 0.4.4 wants to downgrade to 0.3.45",
+    "user": {
+     "login": "alexnederlof",
+     "id": 992615,
+     "type": "User"
+    },
+    "state": "open",
+    "comments": 4,
+    "created_at": "2016-02-06T09:41:13Z",
+    "updated_at": "2016-02-06T17:13:57Z",
+    "body": "I don't think this is intentional. I just upgraded from 0.3.45 to 0.4.4 and when the app restarted, it suggested I \"upgrade\" from from 0.4.4 to 0.3.45\r\n\r\n![screen shot 2016-02-06 at 10 38 20](https://cloud.githubusercontent.com/assets/992615/12865989/3d27ea34-ccbe-11e5-8e2a-520bec26630e.png)\r\n\r\nOn OSX 10.11.3"
+   },
+   "comment": {
+    "id": 180812968,
+    "user": {
+     "login": "jipiboily",
+     "id": 232993,
+     "type": "User"
+    },
+    "created_at": "2016-02-06T17:13:57Z",
+    "updated_at": "2016-02-06T17:13:57Z",
+    "body": "Yeah, same here on Mac, and I actually clicked on it by accident (don't ask) and there is no way to get back to 0.4.4...even deleting it and downloading it from scratch...help? I was so happy to see a unified inbox..."
+   }
+  },
+  "public": true,
+  "created_at": "2016-02-06T17:13:57Z",
+  "org": {
+   "id": 4219865,
+   "login": "nylas",
+   "gravatar_id": "",
+   "url": "https://api.github.com/orgs/nylas",
+   "avatar_url": "https://avatars.githubusercontent.com/u/4219865?"
+  }
+ }
+]

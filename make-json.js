@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+0 > 1 // see https://github.com/babel/babel-eslint/issues/163
 
 'use strict'
 
