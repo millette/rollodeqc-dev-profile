@@ -11,15 +11,27 @@ const cleanHTML = (h) => h
   .replace(/</g, '&lt;')
   .replace(/>/g, '&gt;')
 
+const countActions = (actions) => {
+  if (actions === undefined || actions === true) { return 3 }
+  if (actions === false || typeof actions !== 'object') { return 0 }
+
+  var r
+  var trues = 3
+  for (r in actions) {
+    if (!actions[r]) { --trues }
+  }
+  console.log('trues:', trues)
+  return trues
+}
+
 const addVega = (el, spec) => {
   const s = {
     mode: 'vega-lite',
     spec: spec,
-    // actions: false, // { source: false, editor: false }
+    // actions: { editor: false, source: false, export: false },
     renderer: 'svg'
   }
   const vegaEl = document.createElement('div')
-  vegaEl.style.marginTop = '-1rem'
   vg.embed(vegaEl, s, (err, result) => {
     const elEl = document.querySelector(el)
     if (err) {
@@ -40,14 +52,26 @@ const addVega = (el, spec) => {
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`)
     svg.setAttribute('width', '100%')
     svg.setAttribute('height', '100%')
+    const actionsEl = document.querySelector('.vega-actions')
+    if (actionsEl) {
+      const nColsClasses = [ false, 'one', 'halves', 'thirds' ]
+      const colClass = nColsClasses[countActions(s.actions)]
+      if (colClass) { actionsEl.classList.add(colClass) }
+    }
   })
 }
 
-const wants = [
+const wants = true
+/*
+[
   'CreateEvent',
   'IssuesEvent',
-  'IssueCommentEvent'
+  'IssueCommentEvent',
+  'ForkEvent',
+  'PullRequestEvent',
+  'PushEvent'
 ]
+*/
 
 const j2 = window.fetch('./events.json')
   .then((response) => response.json())
@@ -63,8 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
       data: { values: json },
       mark: 'bar',
       encoding: {
-        x: { timeUnit: 'yearmonthdate', field: 'created_at', type: 'temporal' },
-        y: { aggregate: 'count', field: '*', type: 'quantitative' },
+        y: { timeUnit: 'hours', field: 'created_at', type: 'temporal' },
+        x: { aggregate: 'count', field: '*', type: 'quantitative' },
         color: { field: 'type', type: 'nominal' }
       }
     }
