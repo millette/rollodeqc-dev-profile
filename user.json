@@ -1,16 +1,16 @@
 {
- "login": "lemire",
- "id": 391987,
+ "login": "millette",
+ "id": 50741,
  "type": "User",
- "name": "Daniel Lemire",
- "company": "LICEF Research Center, TELUQ, Université du Québec",
- "blog": "http://lemire.me/en/",
- "location": "Montreal, Canada",
+ "name": "Robin Millette",
+ "blog": "http://www.rollodeqc.com/",
+ "location": "Montréal, Québec",
+ "email": "robin@millette.info",
  "hireable": true,
- "public_repos": 107,
- "public_gists": 5,
- "followers": 497,
- "following": 28,
- "created_at": "2010-09-08T12:54:35Z",
- "updated_at": "2016-05-07T13:12:55Z"
+ "public_repos": 27,
+ "followers": 96,
+ "following": 1542,
+ "created_at": "2009-01-31T18:46:58Z",
+ "updated_at": "2016-04-18T15:59:19Z",
+ "disk_usage": 2471
 }

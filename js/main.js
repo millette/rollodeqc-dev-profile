@@ -52,38 +52,28 @@ const addVega = (el, spec) => {
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`)
     svg.setAttribute('width', '100%')
     svg.setAttribute('height', '100%')
-    const actionsEl = document.querySelector('.vega-actions')
+    const actionsEl = document.querySelectorAll('.vega-actions')
     if (actionsEl) {
       const nColsClasses = [ false, 'one', 'halves', 'thirds' ]
       const colClass = nColsClasses[countActions(s.actions)]
-      if (colClass) { actionsEl.classList.add(colClass) }
+      if (colClass) {
+        var r
+        for (r = 0; r < actionsEl.length; ++r) {
+          // console.log('actionsEl:', typeof actionsEl, actionsEl.length, actionsEl)
+          actionsEl[r].classList.add(colClass)
+        }
+      }
     }
   })
 }
 
-const wants = true
-/*
-[
-  'CreateEvent',
-  'IssuesEvent',
-  'IssueCommentEvent',
-  'ForkEvent',
-  'PullRequestEvent',
-  'PushEvent'
-]
-*/
-
 const j2 = window.fetch('./events.json')
   .then((response) => response.json())
-  .then((json) => wants && wants.length
-    ? json.filter((i) => wants.indexOf(i.type) !== -1)
-    : json
-  )
 
 document.addEventListener('DOMContentLoaded', () => {
   j2.then((json) => {
-    const specVL = {
-      description: 'Last events',
+    const specVL1 = {
+      description: 'Last events, hours worked',
       data: { values: json },
       mark: 'bar',
       encoding: {
@@ -92,11 +82,20 @@ document.addEventListener('DOMContentLoaded', () => {
         color: { field: 'type', type: 'nominal' }
       }
     }
-    addVega('#vega-lite', specVL)
-    // specVL.mark = 'line'
-    // addVega('#vega-lite2', specVL)
+
+    const specVL2 = {
+      description: 'Last events, days worked',
+      data: { values: json },
+      mark: 'bar',
+      encoding: {
+        x: { timeUnit: 'day', field: 'created_at', type: 'temporal' },
+        y: { aggregate: 'count', field: '*', type: 'quantitative' },
+        color: { field: 'type', type: 'nominal' }
+      }
+    }
+
+    addVega('#vega-lite', specVL1)
+    addVega('#vega-lite2', specVL2)
   })
-  .catch((ex) => {
-    console.log('parsing failed', ex)
-  })
+  .catch((ex) => { console.log('parsing failed', ex) })
 })
