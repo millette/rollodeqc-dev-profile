@@ -1,7 +1,10 @@
 # Explorons webpack et lost (grid) [![Dependency Status](https://gemnasium.com/badges/github.com/millette/rollodeqc-dev-profile.svg)](https://gemnasium.com/github.com/millette/rollodeqc-dev-profile)
 
 ```sh
+$ git clone ...
 $ npm install
+$ node_modules/.bin/rollodeqc-gh-user GITHUB-USERNAME > user.json
+$ node_modules/.bin/rollodeqc-gh-user-events GITHUB-USERNAME > events.json
 $ npm start
 ```
 
