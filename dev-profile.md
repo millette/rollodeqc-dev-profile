@@ -25,8 +25,8 @@ Incluant:
 * Projets les plus populaires
 * Membre de quelles organisations
 
-## Cas de Marc T.
-Marc ne veut pas avoir l'air fou ou indiscipliné.
+## Cas de Gérard T.
+Gérard ne veut pas avoir l'air fou ou indiscipliné.
 
 ### Graphiquement
 * Langages (lignes de code)

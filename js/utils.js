@@ -114,7 +114,7 @@ exports.eventTypeBars = (description, json) => {
     encoding: {
       y: { field: 'type', type: 'ordinal' },
       x: { aggregate: 'count', field: '*', type: 'quantitative' },
-      color: { field: 'type', type: 'nominal' }
+      color: { field: 'type', type: 'nominal', legend: false }
     }
   }
 }
