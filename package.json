@@ -50,6 +50,7 @@
     "rollodeqc-gh-repos": "0.0.1",
     "rollodeqc-gh-user": "0.1.1",
     "rollodeqc-gh-user-events": "0.1.2",
+    "sockjs": "^0.3.17",
     "standard": "^7.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
