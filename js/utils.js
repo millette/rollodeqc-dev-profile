@@ -150,8 +150,8 @@ exports.languageBars = (description, json) => {
     if (!Object.keys(repo.languages).length) { return }
     for (r in repo.languages) {
       json2.push({
-        language2key: r,
-        language2value: repo.languages[r],
+        Language: r,
+        LOC: repo.languages[r],
         fork: repo.fork
       })
     }
@@ -167,8 +167,8 @@ exports.languageBars = (description, json) => {
       ]
     },
     encoding: {
-      y: { field: 'language2key', type: 'nominal' },
-      x: { aggregate: 'sum', field: 'language2value', type: 'quantitative' },
+      y: { field: 'Language', type: 'nominal' },
+      x: { aggregate: 'sum', field: 'LOC', type: 'quantitative' },
       color: { field: 'Source', type: 'nominal' }
     }
   }

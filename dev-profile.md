@@ -28,12 +28,14 @@ Incluant:
 ## Cas de Gérard T.
 Gérard ne veut pas avoir l'air fou ou indiscipliné.
 
+*Arranger les légendes et l'ordre des barres, cutoff*
+
 ### Graphiquement
-* Langages (lignes de code)
+* [DONE] Langages (lignes de code)
 * Technologies (mots clés)
 * Projets les plus actifs
-* Licences (nombre de projets)
-* (Type d'events consolidés)
+* [DONE] Licences (nombre de projets)
+* [DONE] (Type d'events consolidés)
 
 ### Autres
 * Organisations
