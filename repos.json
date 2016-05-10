@@ -1,0 +1,800 @@
+[
+ {
+  "id": 7548072,
+  "name": "angular-couch-demo",
+  "full_name": "millette/angular-couch-demo",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Angular demo as a couchapp",
+  "fork": true,
+  "created_at": "2013-01-10T20:28:49Z",
+  "updated_at": "2013-01-14T01:34:59Z",
+  "pushed_at": "2011-05-11T17:41:15Z",
+  "size": 5282,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master"
+ },
+ {
+  "id": 13388020,
+  "name": "recorder.js",
+  "full_name": "millette/recorder.js",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "JavaScript library to record audio in browsers  as used in the SoundCloud Javascript SDK.",
+  "fork": true,
+  "created_at": "2013-10-07T15:47:27Z",
+  "updated_at": "2013-10-07T16:02:29Z",
+  "pushed_at": "2013-10-07T15:55:38Z",
+  "homepage": "http://johannes.wagener.cc",
+  "size": 22608,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "languages": {
+   "JavaScript": 49757,
+   "ActionScript": 36375,
+   "CSS": 5587
+  }
+ },
+ {
+  "id": 14512824,
+  "name": "coinmap",
+  "full_name": "millette/coinmap",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Map showing places where you can use Bitcoin.",
+  "fork": true,
+  "created_at": "2013-11-19T03:17:40Z",
+  "updated_at": "2013-11-19T06:04:02Z",
+  "pushed_at": "2013-11-19T06:04:01Z",
+  "homepage": "http://coinmap.org/",
+  "size": 429,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 13572,
+   "Python": 12207,
+   "CSS": 2279
+  }
+ },
+ {
+  "id": 17967483,
+  "name": "csshake",
+  "full_name": "millette/csshake",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "CSS classes to move your DOM!",
+  "fork": true,
+  "created_at": "2014-03-21T03:46:51Z",
+  "updated_at": "2014-03-21T04:33:41Z",
+  "pushed_at": "2014-03-21T04:25:29Z",
+  "size": 318,
+  "language": "CSS",
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "CSS": 187642
+  }
+ },
+ {
+  "id": 31656251,
+  "name": "rollodeqc",
+  "full_name": "millette/rollodeqc",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Rolodex québécois du logiciel libre - voir le nouveau site:",
+  "created_at": "2015-03-04T12:36:49Z",
+  "updated_at": "2016-04-14T18:00:11Z",
+  "pushed_at": "2016-04-14T17:59:17Z",
+  "homepage": "http://www.rollodeqc.com/",
+  "size": 169,
+  "language": "HTML",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "HTML": 38653,
+   "JavaScript": 3855,
+   "CSS": 1929
+  }
+ },
+ {
+  "id": 42072916,
+  "name": "gh-user",
+  "full_name": "millette/gh-user",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Get user info from a GitHub username",
+  "fork": true,
+  "created_at": "2015-09-07T20:22:07Z",
+  "updated_at": "2015-09-07T20:22:07Z",
+  "pushed_at": "2015-09-08T07:08:04Z",
+  "size": 129,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "JavaScript": 875
+  }
+ },
+ {
+  "id": 51261473,
+  "name": "sydjs-site",
+  "full_name": "millette/sydjs-site",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "SydJS Meetup Website",
+  "fork": true,
+  "created_at": "2016-02-07T19:15:37Z",
+  "updated_at": "2016-02-07T19:15:38Z",
+  "pushed_at": "2016-02-10T22:07:37Z",
+  "size": 7320,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "languages": {
+   "JavaScript": 153747,
+   "CSS": 133812,
+   "HTML": 81457
+  }
+ },
+ {
+  "id": 55188681,
+  "name": "rollodeqc-gh-utils",
+  "full_name": "millette/rollodeqc-gh-utils",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-03-31T23:04:17Z",
+  "updated_at": "2016-03-31T23:05:41Z",
+  "pushed_at": "2016-04-15T16:43:45Z",
+  "size": 28,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 6662
+  }
+ },
+ {
+  "id": 55192919,
+  "name": "rollodeqc-gh-search-users",
+  "full_name": "millette/rollodeqc-gh-search-users",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-01T00:49:06Z",
+  "updated_at": "2016-04-01T00:50:09Z",
+  "pushed_at": "2016-04-15T16:22:20Z",
+  "size": 22,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 10043
+  }
+ },
+ {
+  "id": 55193183,
+  "name": "rollodeqc-gh-bookworm",
+  "full_name": "millette/rollodeqc-gh-bookworm",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-01T00:56:21Z",
+  "updated_at": "2016-04-01T01:14:35Z",
+  "pushed_at": "2016-04-15T16:17:09Z",
+  "size": 20,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 3306
+  }
+ },
+ {
+  "id": 55194494,
+  "name": "rollodeqc-gh-search-users-all",
+  "full_name": "millette/rollodeqc-gh-search-users-all",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-01T01:26:23Z",
+  "updated_at": "2016-04-01T01:27:05Z",
+  "pushed_at": "2016-04-15T16:35:47Z",
+  "size": 19,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 2887
+  }
+ },
+ {
+  "id": 55495203,
+  "name": "rollodeqc-gh-users",
+  "full_name": "millette/rollodeqc-gh-users",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-05T09:34:26Z",
+  "updated_at": "2016-04-05T09:35:22Z",
+  "pushed_at": "2016-04-15T17:00:05Z",
+  "size": 20,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 3536
+  }
+ },
+ {
+  "id": 55724274,
+  "name": "rollodeqc-gh-user",
+  "full_name": "millette/rollodeqc-gh-user",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-07T20:03:14Z",
+  "updated_at": "2016-04-07T20:03:46Z",
+  "pushed_at": "2016-05-08T13:45:39Z",
+  "size": 24,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 6303
+  }
+ },
+ {
+  "id": 55907143,
+  "name": "generator-nm-standard",
+  "full_name": "millette/generator-nm-standard",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-10T15:33:43Z",
+  "updated_at": "2016-04-10T15:34:44Z",
+  "pushed_at": "2016-04-29T22:11:06Z",
+  "size": 133,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "open_issues_count": 1,
+  "open_issues": 1,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "JavaScript": 6093
+  }
+ },
+ {
+  "id": 56053875,
+  "name": "rollodeqc-qc-locator",
+  "full_name": "millette/rollodeqc-qc-locator",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-12T10:35:13Z",
+  "updated_at": "2016-04-26T06:28:24Z",
+  "pushed_at": "2016-04-26T09:32:09Z",
+  "size": 1395,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 3462
+  }
+ },
+ {
+  "id": 56353629,
+  "name": "boy-lost-webpack",
+  "full_name": "millette/boy-lost-webpack",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Point de départ web (grille adaptive et plus)",
+  "created_at": "2016-04-15T22:35:29Z",
+  "updated_at": "2016-04-18T02:17:17Z",
+  "pushed_at": "2016-04-27T19:48:22Z",
+  "homepage": "http://robin.millette.info/webpack-et-lost",
+  "size": 48,
+  "language": "CSS",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "CSS": 12013,
+   "HTML": 1167,
+   "JavaScript": 852
+  }
+ },
+ {
+  "id": 56354370,
+  "name": "rollodeqc-wassup",
+  "full_name": "millette/rollodeqc-wassup",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Le point sur le RoLLodeQc",
+  "created_at": "2016-04-15T22:57:41Z",
+  "updated_at": "2016-04-18T00:14:10Z",
+  "pushed_at": "2016-05-07T10:43:01Z",
+  "homepage": "http://lepoint.rollodeqc.com/",
+  "size": 74,
+  "language": "CSS",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "cc-by-sa-4.0",
+   "name": "Creative Commons Attribution Share Alike 4.0",
+   "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+   "featured": false
+  },
+  "languages": {
+   "CSS": 12013,
+   "HTML": 5525,
+   "JavaScript": 779
+  }
+ },
+ {
+  "id": 56726948,
+  "name": "librarian-api",
+  "full_name": "millette/librarian-api",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-20T23:14:31Z",
+  "updated_at": "2016-04-20T23:16:36Z",
+  "pushed_at": "2016-04-21T02:27:25Z",
+  "size": 24,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 6732
+  }
+ },
+ {
+  "id": 56729202,
+  "name": "package-managers",
+  "full_name": "millette/package-managers",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": ":package: Metadata about every package manager that Libraries.io supports",
+  "fork": true,
+  "created_at": "2016-04-21T00:12:39Z",
+  "updated_at": "2016-04-21T00:33:31Z",
+  "pushed_at": "2016-04-21T00:42:49Z",
+  "homepage": "https://libraries.io/",
+  "size": 16,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "languages": {
+   "JavaScript": 193
+  }
+ },
+ {
+  "id": 56805242,
+  "name": "meridas",
+  "full_name": "millette/meridas",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Projets I'm starring daily on github",
+  "created_at": "2016-04-21T20:58:22Z",
+  "updated_at": "2016-04-21T21:13:41Z",
+  "pushed_at": "2016-04-27T00:09:58Z",
+  "homepage": "http://meridas.rollodeqc.com/millette/",
+  "size": 88,
+  "language": "CSS",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "CSS": 11021,
+   "HTML": 2399,
+   "JavaScript": 1478,
+   "Shell": 413
+  }
+ },
+ {
+  "id": 56931829,
+  "name": "star-where",
+  "full_name": "millette/star-where",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-23T17:27:05Z",
+  "updated_at": "2016-04-26T22:23:54Z",
+  "pushed_at": "2016-04-27T17:59:03Z",
+  "size": 21,
+  "stargazers_count": 1,
+  "watchers_count": 1,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "forks_count": 1,
+  "forks": 1,
+  "watchers": 1,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 4011
+  }
+ },
+ {
+  "id": 56990898,
+  "name": "webqcdevs",
+  "full_name": "millette/webqcdevs",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Sites web des développeurs du Québec",
+  "created_at": "2016-04-24T19:45:19Z",
+  "updated_at": "2016-04-25T00:06:48Z",
+  "pushed_at": "2016-04-25T00:04:33Z",
+  "homepage": "https://twitter.com/RoLLodeQc/status/724387860137177088",
+  "size": 57,
+  "language": "CSS",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "CSS": 10005,
+   "JavaScript": 2463,
+   "HTML": 1767
+  }
+ },
+ {
+  "id": 57244680,
+  "name": "rollodeqc-dev-profile",
+  "full_name": "millette/rollodeqc-dev-profile",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-27T20:16:02Z",
+  "updated_at": "2016-04-27T20:16:08Z",
+  "pushed_at": "2016-05-09T14:04:39Z",
+  "size": 327,
+  "language": "CSS",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "url": "https://api.github.com/licenses/mit",
+   "featured": true
+  },
+  "languages": {
+   "CSS": 11231,
+   "JavaScript": 7652,
+   "HTML": 1808
+  }
+ },
+ {
+  "id": 57431455,
+  "name": "aurtier",
+  "full_name": "millette/aurtier",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-04-30T07:16:53Z",
+  "updated_at": "2016-04-30T07:16:57Z",
+  "pushed_at": "2016-05-06T13:01:30Z",
+  "size": 47,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 8238
+  }
+ },
+ {
+  "id": 57666912,
+  "name": "rollodeqc-gh-repos",
+  "full_name": "millette/rollodeqc-gh-repos",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-05-01T16:52:09Z",
+  "updated_at": "2016-05-01T16:52:12Z",
+  "pushed_at": "2016-05-08T11:23:06Z",
+  "size": 25,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 4328
+  }
+ },
+ {
+  "id": 58053525,
+  "name": "rollodeqc-gh-user-events",
+  "full_name": "millette/rollodeqc-gh-user-events",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "created_at": "2016-05-04T13:18:15Z",
+  "updated_at": "2016-05-04T13:18:18Z",
+  "pushed_at": "2016-05-09T00:05:21Z",
+  "size": 28,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "master",
+  "master_branch": "master",
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "featured": false
+  },
+  "languages": {
+   "JavaScript": 28453
+  }
+ },
+ {
+  "id": 58131399,
+  "name": "blur-admin",
+  "full_name": "millette/blur-admin",
+  "owner": {
+   "login": "millette",
+   "id": 50741,
+   "type": "User"
+  },
+  "description": "Free Angular Bootstrap Admin Dashboard Template",
+  "fork": true,
+  "created_at": "2016-05-05T13:06:24Z",
+  "updated_at": "2016-05-05T13:06:25Z",
+  "pushed_at": "2016-05-05T15:12:12Z",
+  "homepage": "http://akveo.com/blur-admin",
+  "size": 15946,
+  "language": "JavaScript",
+  "has_downloads": true,
+  "has_wiki": true,
+  "default_branch": "rollodeqc",
+  "master_branch": "rollodeqc",
+  "languages": {
+   "JavaScript": 247960,
+   "HTML": 185126,
+   "CSS": 133404
+  }
+ }
+]
