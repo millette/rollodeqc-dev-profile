@@ -111,10 +111,13 @@ exports.eventTypeBars = (description, json) => {
     description: description,
     data: { values: json },
     mark: 'bar',
+    transform: {
+      calculate: [ { field: 'Event', expr: 'slice(datum.type, 0, -5)' } ]
+    },
     encoding: {
-      y: { field: 'type', type: 'ordinal' },
+      y: { field: 'Event', type: 'ordinal' },
       x: { aggregate: 'count', field: '*', type: 'quantitative' },
-      color: { field: 'type', type: 'nominal', legend: false }
+      color: { field: 'Event', type: 'nominal', legend: false }
     }
   }
 }
