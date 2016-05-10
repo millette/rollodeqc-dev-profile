@@ -14,8 +14,8 @@ const countActions = (actions) => {
   if (actions === undefined || actions === true) { return 3 }
   if (actions === false || typeof actions !== 'object') { return 0 }
 
-  var r
-  var trues = 3
+  let r
+  let trues = 3
   for (r in actions) { if (!actions[r]) { --trues } }
   return Math.max(trues, 0)
 }
@@ -32,9 +32,11 @@ exports.addVega = (el, spec) => {
   vg.embed(vegaEl, s, (err, result) => {
     const elEl = document.querySelector(el)
     if (err) {
-      const preEl = document.createElement('pre')
-      preEl.innerHTML = err
-      elEl.appendChild(preEl)
+      if (elEl) {
+        const preEl = document.createElement('pre')
+        preEl.innerHTML = err
+        elEl.appendChild(preEl)
+      }
       return
     }
     const titleEl = document.createElement('h5')
@@ -54,7 +56,7 @@ exports.addVega = (el, spec) => {
       const nColsClasses = [ false, 'one', 'halves', 'thirds' ]
       const colClass = nColsClasses[countActions(s.actions)]
       if (colClass) {
-        var r
+        let r
         for (r = 0; r < actionsEl.length; ++r) { actionsEl[r].classList.add(colClass) }
       }
     }
@@ -99,7 +101,7 @@ exports.licenseBars = (description, json) => {
       ]
     },
     encoding: {
-      y: { field: 'Licenses', type: 'ordinal' },
+      y: { field: 'Licenses', type: 'nominal' },
       x: { aggregate: 'count', field: '*', type: 'quantitative' },
       color: { field: 'Source', type: 'nominal' }
     }
@@ -115,9 +117,59 @@ exports.eventTypeBars = (description, json) => {
       calculate: [ { field: 'Event', expr: 'slice(datum.type, 0, -5)' } ]
     },
     encoding: {
-      y: { field: 'Event', type: 'ordinal' },
+      y: { field: 'Event', type: 'nominal' },
       x: { aggregate: 'count', field: '*', type: 'quantitative' },
       color: { field: 'Event', type: 'nominal', legend: false }
+    }
+  }
+}
+
+exports.languagePBars = (description, json) => {
+  return {
+    description: description,
+    data: { values: json },
+    mark: 'bar',
+    transform: {
+      calculate: [
+        { field: 'Source', expr: 'datum.fork ? "Fork" : "Original"' }
+      ]
+    },
+    encoding: {
+      y: { field: 'language', type: 'nominal' },
+      x: { aggregate: 'count', field: '*', type: 'quantitative' },
+      color: { field: 'Source', type: 'nominal' }
+    }
+  }
+}
+
+exports.languageBars = (description, json) => {
+  const json2 = []
+  let r
+  json.forEach((repo) => {
+    if (!repo.languages) { return }
+    if (!Object.keys(repo.languages).length) { return }
+    for (r in repo.languages) {
+      json2.push({
+        language2key: r,
+        language2value: repo.languages[r],
+        fork: repo.fork
+      })
+    }
+  })
+
+  return {
+    description: description,
+    data: { values: json2 },
+    mark: 'bar',
+    transform: {
+      calculate: [
+        { field: 'Source', expr: 'datum.fork ? "Fork" : "Original"' }
+      ]
+    },
+    encoding: {
+      y: { field: 'language2key', type: 'nominal' },
+      x: { aggregate: 'sum', field: 'language2value', type: 'quantitative' },
+      color: { field: 'Source', type: 'nominal' }
     }
   }
 }

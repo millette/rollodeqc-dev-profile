@@ -31,8 +31,9 @@ const plugins = [ new webpack.ProvidePlugin({
   'window.fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
 }) ]
 
-if (false) {
-  loaders.push({ test: /\/js\/main\.js$/, loader: 'babel?presets[]=es2015' })
+loaders.push({ test: /\/js\/(main|utils)\.js$/, loader: 'babel?presets[]=es2015' })
+
+if (true) {
   plugins.push(new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }))
 }
 
