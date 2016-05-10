@@ -15,7 +15,7 @@
   "scripts": {
     "start": "standard && webpack-dev-server",
     "lint": "standard",
-    "make": "standard && webpack && mkdir -p dist/js/polyfill/ ; cp events.json user.json repos.json crossdomain.xml favicon.ico index.html bundle.js dist/ && cp js/polyfill/* dist/js/polyfill/"
+    "make": "standard && NODE_ENV=production webpack && mkdir -p dist/js/polyfill/ ; cp events.json user.json repos.json crossdomain.xml favicon.ico index.html bundle.js dist/ && cp js/polyfill/* dist/js/polyfill/"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -40,7 +40,7 @@
     "lodash.countby": "^4.3.0",
     "lost": "^6.7.2",
     "postcss": "^5.0.21",
-    "postcss-browser-reporter": "^0.4.0",
+    "postcss-browser-reporter": "^0.5.0",
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",

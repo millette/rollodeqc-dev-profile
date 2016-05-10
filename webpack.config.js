@@ -33,7 +33,7 @@ const plugins = [ new webpack.ProvidePlugin({
 
 loaders.push({ test: /\/js\/(main|utils)\.js$/, loader: 'babel?presets[]=es2015' })
 
-if (true) {
+if (process.env.NODE_ENV === 'production') {
   plugins.push(new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }))
 }
 
