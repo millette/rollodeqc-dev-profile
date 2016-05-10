@@ -1,5 +1,6 @@
 'use strict'
 
+const utils = require('./utils.js')
 const vg = require('vega')
 vg.embed = require('vega-embed')
 vg.lite = require('vega-lite')
@@ -67,35 +68,17 @@ const addVega = (el, spec) => {
   })
 }
 
-const j2 = window.fetch('./events.json')
-  .then((response) => response.json())
+const datas = [
+  window.fetch('./events.json').then((response) => response.json()),
+  window.fetch('./repos.json').then((response) => response.json())
+]
 
 document.addEventListener('DOMContentLoaded', () => {
-  j2.then((json) => {
-    const specVL1 = {
-      description: 'Last events, hours worked',
-      data: { values: json },
-      mark: 'bar',
-      encoding: {
-        y: { timeUnit: 'hours', field: 'created_at', type: 'temporal' },
-        x: { aggregate: 'count', field: '*', type: 'quantitative' },
-        color: { field: 'type', type: 'nominal' }
-      }
-    }
-
-    const specVL2 = {
-      description: 'Last events, days worked',
-      data: { values: json },
-      mark: 'bar',
-      encoding: {
-        x: { timeUnit: 'day', field: 'created_at', type: 'temporal' },
-        y: { aggregate: 'count', field: '*', type: 'quantitative' },
-        color: { field: 'type', type: 'nominal' }
-      }
-    }
-
-    addVega('#vega-lite', specVL1)
-    addVega('#vega-lite2', specVL2)
+  Promise.all(datas).then((data) => {
+    const json = data[0]
+    const repos = data[1]
+    addVega('#vega-lite', utils.hourPeriod('Last events, hours worked', json))
+    addVega('#vega-lite2', utils.dayPeriod('Last events, days worked', json))
   })
   .catch((ex) => { console.log('parsing failed', ex) })
 })
