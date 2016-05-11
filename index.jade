@@ -26,15 +26,17 @@ block content
 
         li.gray Participent aux groupes: Python, Ruby (login to edit)
 
-      #vega-lite2
-      #vega-lite4
+      if devs.repos && devs.repos.length
+        #vega-lite2
+        #vega-lite4
 
     div#photo
       img(src='https://avatars3.githubusercontent.com/u/' + devs.id + '?v=3&s=460')
-      h1= devs.name + ' '
+      h1= (devs.name||'') + ' '
         small: a(href='https://github.com/' + devs.login) (github/#{devs.login})
 
-      #vega-lite
+      if devs.events && devs.events.length
+        #vega-lite
       //- #vega-lite3
 
   footer

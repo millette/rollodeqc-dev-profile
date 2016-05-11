@@ -24,6 +24,8 @@ const preprocess = (dev) => {
 }
 
 const devs = preprocess(require('./user.json'))
+devs.repos = require('./repos.json')
+devs.events = require('./events.json')
 
 const loaders = [
   { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' },
