@@ -19,7 +19,6 @@ router.get('/index3/:id/repos.json', (req, res) => {
 
   db.get(req.params.id)
     .then((zz) => {
-      console.log('ZZ:', zz)
       res.set('Content-Type', 'application/json')
       res.send(JSON.stringify(zz.repos, null, ' '))
     })
@@ -38,7 +37,6 @@ router.get('/index3/:id/events.json', (req, res) => {
 
   db.get(req.params.id)
     .then((zz) => {
-      console.log('ZZ:', zz)
       res.set('Content-Type', 'application/json')
       res.send(JSON.stringify(zz.events, null, ' '))
     })
@@ -57,7 +55,6 @@ router.get('/index3/:id/user.json', (req, res) => {
 
   db.get(req.params.id)
     .then((zz) => {
-      console.log('ZZ:', zz)
       delete zz.repos
       delete zz.events
       res.set('Content-Type', 'application/json')
@@ -70,18 +67,13 @@ router.get('/index3/:id/user.json', (req, res) => {
 })
 
 router.get('/index3/:id', (req, res) => {
-  console.log('CALLING /index3/:id', new Date())
-
   let p1
   if (!/^[a-zA-Z0-9]+(-{0,1}[a-zA-Z0-9]+)*$/.test(req.params.id)) {
     console.log('bad param:', req.params.id)
     p1 = false
   } else {
     p1 = db.upsert(req.params.id, (doc) => {
-      console.log('doc1:', req.params.id, doc)
-
       if (Object.keys(doc).length && doc.login) { return false }
-
       try {
         doc = require(`./bof/users/${req.params.id}/user.json`)
         doc.events = require(`./bof/users/${req.params.id}/events.json`)
@@ -98,13 +90,11 @@ router.get('/index3/:id', (req, res) => {
   .then((out) => {
     const res2 = out[0]
     const info = out[1]
-    console.log('res2:', res2)
-    console.log('info:', info)
     res.render('index3', {
       title: 'Hey',
       message: 'Hello there!',
       h2: req.params.id,
-      pre: JSON.stringify(info, null, ' ')
+      pre: JSON.stringify({ info: info, res2: res2 }, null, ' ')
     })
   })
   .catch((e) => {
