@@ -3,8 +3,8 @@
 const utils = require('./utils.js')
 
 const datas = [
-  window.fetch('./events.json').then((response) => response.json()),
-  window.fetch('./repos.json').then((response) => response.json())
+  window.fetch('events.json').then((response) => response.json()),
+  window.fetch('repos.json').then((response) => response.json())
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
