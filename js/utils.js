@@ -24,7 +24,8 @@ exports.addVega = (el, spec) => {
   const s = {
     mode: 'vega-lite',
     spec: spec,
-    actions: { source: false },
+    actions: false,
+    // actions: { source: false },
     renderer: 'svg'
   }
 
