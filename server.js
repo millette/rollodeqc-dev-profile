@@ -1,23 +1,30 @@
+#!/usr/bin/env node
+0 > 1 // see https://github.com/babel/babel-eslint/issues/163
+
 'use strict'
 
+// npm
 const express = require('express')
-const app = express()
-const router = express.Router()
+const fetchRepos = require('rollodeqc-gh-repos')
+const fetchUser = require('rollodeqc-gh-user')
+const fetchEvents = require('rollodeqc-gh-user-events')
 const PouchDB = require('pouchdb')
 PouchDB.plugin(require('pouchdb-upsert'))
 
+const app = express()
+const router = express.Router()
 const db = new PouchDB('db/devs')
 
 app.set('view engine', 'jade')
 
 const reValid = new RegExp('^[a-z0-9]+(-{0,1}[a-z0-9]+)*$', 'i')
 const invalidUsername = (req, res) => {
-  const x = !reValid.test(req.params.id)
-  if (x && res) {
+  const invalid = !reValid.test(req.params.id)
+  if (invalid && res) {
     console.log('bad param:', req.params.id)
     res.send('bad param: ' + req.params.id)
   }
-  return x
+  return invalid
 }
 
 const handleJson = (type) => {
@@ -46,13 +53,36 @@ handleJson('events')
 handleJson('user')
 
 router.get('/index3/:id', (req, res) => {
+  'use strict'
+  // SyntaxError: Block-scoped declarations (let, const, function, class)
+  // not yet supported outside strict mode
   let p1
+
   if (invalidUsername(req)) {
     console.log('bad param:', req.params.id)
     p1 = false
   } else {
     p1 = db.upsert(req.params.id, (doc) => {
       if (Object.keys(doc).length && doc.login) { return false }
+      // fetch from github api
+      console.log('We are fetching...')
+      return Promise.all([
+        fetchUser(req.params.id),
+        fetchRepos(req.params.id),
+        fetchEvents(req.params.id)
+      ])
+        .then((hi) => {
+          console.log('FETCHED!!!')
+          doc = hi[0]
+          doc.repos = hi[1]
+          doc.events = hi[2]
+          return doc
+        })
+        .catch((e) => {
+          console.log('Oh my:', e)
+          return false
+        })
+      /*
       try {
         doc = require(`./bof/users/${req.params.id}/user.json`)
         doc.events = require(`./bof/users/${req.params.id}/events.json`)
@@ -62,23 +92,24 @@ router.get('/index3/:id', (req, res) => {
         console.log('Oh my:', e)
         return false
       }
+      */
     })
   }
 
   Promise.all([p1, db.info()])
-  .then((out) => {
-    const res2 = out[0]
-    const info = out[1]
-    res.render('index3', {
-      title: 'Hey',
-      message: 'Hello there!',
-      h2: req.params.id,
-      pre: JSON.stringify({ info: info, res2: res2 }, null, ' ')
+    .then((out) => {
+      const res2 = out[0]
+      const info = out[1]
+      res.render('index3', {
+        title: 'Hey',
+        message: 'Hello there!',
+        h2: req.params.id,
+        pre: JSON.stringify({ info: info, res2: res2 }, null, ' ')
+      })
     })
-  })
-  .catch((e) => {
-    console.log('OUPSY:', e)
-  })
+    .catch((e) => {
+      console.log('OUPSY:', e)
+    })
 })
 
 app.use(express.static('dist'))
