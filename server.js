@@ -10,65 +10,44 @@ const db = new PouchDB('db/devs')
 
 app.set('view engine', 'jade')
 
-router.get('/index3/:id/repos.json', (req, res) => {
-  if (!/^[a-zA-Z0-9]+(-{0,1}[a-zA-Z0-9]+)*$/.test(req.params.id)) {
+const reValid = new RegExp('^[a-z0-9]+(-{0,1}[a-z0-9]+)*$', 'i')
+const invalidUsername = (req, res) => {
+  const x = !reValid.test(req.params.id)
+  if (x && res) {
     console.log('bad param:', req.params.id)
     res.send('bad param: ' + req.params.id)
-    return
   }
+  return x
+}
 
-  db.get(req.params.id)
-    .then((zz) => {
-      res.set('Content-Type', 'application/json')
-      res.send(JSON.stringify(zz.repos, null, ' '))
-    })
-    .catch((e) => {
-      console.log('GIVE ME AN E:', e)
-      res.status(404).send('GIVE ME AN E: ' + e)
-    })
-})
+const handleJson = (type) => {
+  router.get(`/index3/:id/${type}.json`, (req, res) => {
+    if (invalidUsername(req, res)) { return }
+    db.get(req.params.id)
+      .then((zz) => {
+        res.set('Content-Type', 'application/json')
+        if (type === 'user') {
+          delete zz.repos
+          delete zz.events
+          res.send(JSON.stringify(zz, null, ' '))
+        } else {
+          res.send(JSON.stringify(zz[type], null, ' '))
+        }
+      })
+      .catch((e) => {
+        console.log('GIVE ME AN E:', e)
+        res.status(404).send('GIVE ME AN E: ' + e)
+      })
+  })
+}
 
-router.get('/index3/:id/events.json', (req, res) => {
-  if (!/^[a-zA-Z0-9]+(-{0,1}[a-zA-Z0-9]+)*$/.test(req.params.id)) {
-    console.log('bad param:', req.params.id)
-    res.send('bad param: ' + req.params.id)
-    return
-  }
-
-  db.get(req.params.id)
-    .then((zz) => {
-      res.set('Content-Type', 'application/json')
-      res.send(JSON.stringify(zz.events, null, ' '))
-    })
-    .catch((e) => {
-      console.log('GIVE ME AN E:', e)
-      res.status(404).send('GIVE ME AN E: ' + e)
-    })
-})
-
-router.get('/index3/:id/user.json', (req, res) => {
-  if (!/^[a-zA-Z0-9]+(-{0,1}[a-zA-Z0-9]+)*$/.test(req.params.id)) {
-    console.log('bad param:', req.params.id)
-    res.send('bad param: ' + req.params.id)
-    return
-  }
-
-  db.get(req.params.id)
-    .then((zz) => {
-      delete zz.repos
-      delete zz.events
-      res.set('Content-Type', 'application/json')
-      res.send(JSON.stringify(zz, null, ' '))
-    })
-    .catch((e) => {
-      console.log('GIVE ME AN E:', e)
-      res.status(404).send('GIVE ME AN E: ' + e)
-    })
-})
+handleJson('repos')
+handleJson('events')
+handleJson('user')
 
 router.get('/index3/:id', (req, res) => {
   let p1
-  if (!/^[a-zA-Z0-9]+(-{0,1}[a-zA-Z0-9]+)*$/.test(req.params.id)) {
+  if (invalidUsername(req)) {
     console.log('bad param:', req.params.id)
     p1 = false
   } else {
