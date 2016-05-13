@@ -9,7 +9,6 @@ const fetchRepos = require('rollodeqc-gh-repos')
 const fetchUser = require('rollodeqc-gh-user')
 const fetchEvents = require('rollodeqc-gh-user-events')
 const PouchDB = require('pouchdb')
-PouchDB.plugin(require('pouchdb-upsert'))
 
 const app = express()
 const router = express.Router()
