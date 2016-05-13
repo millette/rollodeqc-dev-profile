@@ -54,6 +54,39 @@ handleJson('user')
 
 router.get('/index3/:id', (req, res) => {
   'use strict'
+
+  const diffDoc = (doc) => {
+    console.log('ORIGINAL DOC:', doc)
+    if (Object.keys(doc).length && doc.login) { return false }
+    // fetch from github api
+    console.log('We are fetching...')
+    const zz = Promise.all([
+    //return Promise.all([
+      fetchUser(req.params.id),
+      fetchEvents(req.params.id)
+      // fetchRepos(req.params.id)
+    ])
+      .then((hi) => {
+        console.log('FETCHED!!!', Object.keys(doc))
+        // doc = hi.slice(0)[0]
+        doc.login = hi[0].login
+        doc.events = hi[1]
+        // doc.repos = hi[2]
+        // doc._id = req.params.id
+        console.log('DOC', Object.keys(doc))
+        return doc
+      })
+      .catch((e) => {
+        console.log('Oh my:', e)
+        return false
+      })
+    console.log('ZZZ')
+    return zz.then((abc) => {
+      console.log('ABC', abc)
+      return abc
+    })
+  }
+
   // SyntaxError: Block-scoped declarations (let, const, function, class)
   // not yet supported outside strict mode
   let p1
@@ -62,42 +95,16 @@ router.get('/index3/:id', (req, res) => {
     console.log('bad param:', req.params.id)
     p1 = false
   } else {
-    p1 = db.upsert(req.params.id, (doc) => {
-      if (Object.keys(doc).length && doc.login) { return false }
-      // fetch from github api
-      console.log('We are fetching...')
-      return Promise.all([
-        fetchUser(req.params.id),
-        fetchRepos(req.params.id),
-        fetchEvents(req.params.id)
-      ])
-        .then((hi) => {
-          console.log('FETCHED!!!')
-          doc = hi[0]
-          doc.repos = hi[1]
-          doc.events = hi[2]
-          return doc
-        })
-        .catch((e) => {
-          console.log('Oh my:', e)
-          return false
-        })
-      /*
-      try {
-        doc = require(`./bof/users/${req.params.id}/user.json`)
-        doc.events = require(`./bof/users/${req.params.id}/events.json`)
-        doc.repos = require(`./bof/users/${req.params.id}/repos.json`)
-        return doc
-      } catch (e) {
-        console.log('Oh my:', e)
-        return false
-      }
-      */
-    })
+    p1 = db.upsert(req.params.id, diffDoc)
+      .then((ggg) => {
+        console.log('GGG:', ggg)
+        return ggg
+      })
   }
 
   Promise.all([p1, db.info()])
     .then((out) => {
+      console.log('SHOWING', out[0])
       const res2 = out[0]
       const info = out[1]
       res.render('index3', {
