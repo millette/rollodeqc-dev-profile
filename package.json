@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "standard && webpack-dev-server",
+    "start": "node server",
     "lint": "standard",
     "make": "standard && NODE_ENV=production webpack && mkdir -p dist/js/polyfill/ ; cp events.json user.json repos.json crossdomain.xml favicon.ico index.html bundle.js dist/ && cp js/polyfill/* dist/js/polyfill/"
   },
